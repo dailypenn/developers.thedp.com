@@ -4,12 +4,12 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-styled-components",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-google-analytics",
+    //   options: {
+    //     trackingId: "",
+    //   },
+    // },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-sharp",
@@ -21,5 +21,6 @@ module.exports = {
       },
       __key: "images",
     },
+    `gatsby-plugin-sass`
   ],
 };
