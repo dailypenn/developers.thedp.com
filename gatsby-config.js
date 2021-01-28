@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "DP Tech Website",
+    title: "DP Tech",
   },
   plugins: [
     "gatsby-plugin-styled-components",
