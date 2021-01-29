@@ -1,0 +1,67 @@
+[
+  {
+    "section": "Leadership",
+    "description": "",
+    "members": [
+      {
+        "name": "Peter Baile Chen",
+        "tags": ["Director"],
+        "emoji": "🐯",
+        "from": "Hong Kong"
+      }
+    ]
+  },
+  {
+    "section": "Mobile Developers",
+    "description": "",
+    "members": [
+      {
+        "name": "Justin Lieb",
+        "tags": ["Co-lead"],
+        "from": "California"
+      },
+      {
+        "name": "Raunaq Singh",
+        "tags": ["Co-lead"],
+        "from": "California"
+      },
+      {
+        "name": "Elizabeth Powell",
+        "tags": ["Mobile"],
+        "from": "California"
+      }
+    ]
+  },
+  {
+    "section": "Web Developers",
+    "description": "",
+    "members": [
+      {
+        "name": "Calvin Hu",
+        "tags": ["Lead"],
+        "from": "California"
+      },
+      {
+        "name": "Nassim Motya",
+        "tags": ["Web"],
+        "from": "California"
+      }
+    ]
+  },
+  {
+    "section": "Designers",
+    "description": "",
+    "members": [
+      {
+        "name": "Isabel Liang",
+        "tags": ["Design boss"],
+        "from": ""
+      },
+      {
+        "name": "Felicity Yick",
+        "tags": ["Web Design"],
+        "from": "Hong Kong"
+      }
+    ]
+  }
+]
