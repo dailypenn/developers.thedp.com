@@ -12,6 +12,10 @@ const LatestWorkWrapper = s.div`
   padding: 1rem 1rem;
   padding-left: 15rem;
   margin-right: 5rem;
+
+  @media (max-width: 992px) {
+    padding-left: 2rem;
+  }
 `
 
 const Title = s.h2`
