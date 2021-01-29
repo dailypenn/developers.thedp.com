@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
+import s from 'styled-components'
 
 import { StyledLink } from './typography'
 import { ApplyButtonNav } from './badge'
@@ -19,11 +20,21 @@ const LINKS = [
   }
 ]
 
-export const NavText = ({ link, name }) => (
+const NavText = ({ link, name }) => (
   <StyledLink to={link} style={{ marginRight: '1rem' }}>
     <Navbar.Text>{name}</Navbar.Text>
   </StyledLink>
 )
+
+const Collapse = s(Navbar.Collapse)`
+  justify-content: flex-end;
+  margin: 0.5rem 0;
+
+  @media (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+  }
+`
 
 export const NavBar = () => (
   <Navbar
@@ -41,15 +52,13 @@ export const NavBar = () => (
     <Navbar.Toggle style={{ border: 'none' }}>
       <img src="/menu.svg" />
     </Navbar.Toggle>
-    <Navbar.Collapse className="justify-content-end">
-      <Nav style={{ textAlign: 'center' }}>
-        {LINKS.map(link => (
-          <NavText {...link} />
-        ))}
-        <StyledLink to="apply">
-          <ApplyButtonNav> Apply </ApplyButtonNav>
-        </StyledLink>
-      </Nav>
-    </Navbar.Collapse>
+    <Collapse>
+      {LINKS.map(link => (
+        <NavText {...link} />
+      ))}
+      <StyledLink to="/apply">
+        <ApplyButtonNav> Apply </ApplyButtonNav>
+      </StyledLink>
+    </Collapse>
   </Navbar>
 )

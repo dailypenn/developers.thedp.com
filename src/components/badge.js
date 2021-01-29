@@ -27,7 +27,7 @@ const ApplyButton = s.div`
   color: white;
 `
 
-export const ApplyButtonNav = s.button`
+export const ApplyButtonNav = s.div`
   background-color: ${BLUE};
   ${POPPINS_REGULAR}
   border-radius: 21px;
@@ -36,4 +36,9 @@ export const ApplyButtonNav = s.button`
   padding: 0.2rem 1rem;
   color: white;
   margin-right: 2rem;
+
+  @media (max-width: 992px) {
+    margin-top: 0.4rem;
+    margin-right: 0.4rem;
+  }
 `
