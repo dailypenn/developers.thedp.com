@@ -7,7 +7,7 @@ export const Header = () => (
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Best of Penn" />
-    <title>Best of Penn 2020 | The Daily Pennsylvanian</title>
+    <title>DP Tech</title>
     <link
       rel="stylesheet"
       type="text/css"

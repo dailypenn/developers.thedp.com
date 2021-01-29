@@ -3,7 +3,7 @@ import s from 'styled-components'
 import Img from 'gatsby-image'
 import { Row, Col } from 'react-bootstrap'
 
-import { Header } from '../components'
+import { Container } from '../components'
 import ProductsJSON from '../json/products.json'
 import { PageTitle, PageDescription } from '../components/typography'
 import { POPPINS_MEDIUM, POPPINS_REGULAR } from '../styles/fonts'
@@ -91,8 +91,7 @@ const Card = ({ className, children, flush }) => (
 
 const Products = () => {
   return (
-    <>
-      <Header />
+    <Container>
       <Row style={{ padding: '3rem 3rem' }}>
         <Col md={4}>
           <PageTitle> Our Products </PageTitle>
@@ -110,7 +109,7 @@ const Products = () => {
           </Row>
         </Col>
       </Row>
-    </>
+    </Container>
   )
 }
 
