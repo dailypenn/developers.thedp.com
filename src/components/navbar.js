@@ -46,9 +46,11 @@ export const NavBar = () => (
       fontSize: '0.9rem'
     }}
   >
-    <Navbar.Brand href="#home">
-      <img src="/logo-rect.png" height="40" />
-    </Navbar.Brand>
+    <StyledLink to="/">
+      <Navbar.Brand>
+        <img src="/logo-rect.png" height="40" />
+      </Navbar.Brand>
+    </StyledLink>
     <Navbar.Toggle style={{ border: 'none' }}>
       <img src="/menu.svg" />
     </Navbar.Toggle>
