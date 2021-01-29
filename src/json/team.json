@@ -7,7 +7,8 @@
         "name": "Peter Baile Chen",
         "tags": ["Director"],
         "emoji": "🐯",
-        "from": "Hong Kong"
+        "from": "Hong Kong",
+        "img": "../images/members/peter.jpg"
       }
     ]
   },
@@ -18,17 +19,20 @@
       {
         "name": "Justin Lieb",
         "tags": ["Co-lead"],
-        "from": "California"
+        "from": "California",
+        "img": "../images/members/lieb.jpeg"
       },
       {
         "name": "Raunaq Singh",
         "tags": ["Co-lead"],
-        "from": "California"
+        "from": "California",
+        "img": "../images/members/raunaq.jpg"
       },
       {
         "name": "Elizabeth Powell",
         "tags": ["Mobile"],
-        "from": "California"
+        "from": "California",
+        "img": "../images/members/liz.jpeg"
       }
     ]
   },
@@ -39,12 +43,14 @@
       {
         "name": "Calvin Hu",
         "tags": ["Lead"],
-        "from": "California"
+        "from": "California",
+        "img": "../images/members/calvin.jpg"
       },
       {
         "name": "Nassim Motya",
         "tags": ["Web"],
-        "from": "California"
+        "from": "California",
+        "img": "../images/members/nassim.png"
       }
     ]
   },
@@ -55,12 +61,14 @@
       {
         "name": "Isabel Liang",
         "tags": ["Design boss"],
-        "from": ""
+        "from": "",
+        "img": "../images/members/isabel.png"
       },
       {
         "name": "Felicity Yick",
         "tags": ["Web Design"],
-        "from": "Hong Kong"
+        "from": "Hong Kong",
+        "img": "../images/members/felicity.jpg"
       }
     ]
   }
