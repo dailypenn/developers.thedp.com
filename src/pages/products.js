@@ -1,12 +1,13 @@
 import React from 'react'
 import s from 'styled-components'
 import Img from 'gatsby-image'
+import { useStaticQuery, graphql } from 'gatsby'
 import { Row, Col } from 'react-bootstrap'
 
 import { Container } from '../components'
-import ProductsJSON from '../json/products.json'
 import { PageTitle, PageDescription } from '../components/typography'
 import { POPPINS_MEDIUM, POPPINS_REGULAR } from '../styles/fonts'
+import { BLUE_PERCENT, RED_PERCENT } from '../styles/constants'
 
 const WHITE = `#FFFFFF`
 const TEXT_GREY = `#494748`
@@ -43,43 +44,52 @@ const CardHeader = s.h2`
   margin-right: 40px;
   margin-left: 40px;
   margin-top: 30px;
-  ${({ color }) => color && `color: ${color};`}
+  color: black;
   ${POPPINS_MEDIUM}
-`
-
-const Subheader = s.p`
-  ${({ color }) => color && `color: ${color};`}
-  margin-right: 40px;
-  margin-left: 40px;
-  font-style: italic;
-  ${POPPINS_REGULAR}
 `
 
 const Content = s.p`
   margin-right: 40px;
   margin-left: 40px;
-  color: ${TEXT_GREY};
+  color: black;
+  font-size: 90%;
+  margin-top: 4rem;
+  ${POPPINS_REGULAR}
 `
 
-export const CardContent = ({
-  title,
-  link,
-  authors,
-  abstract,
-  image,
-  primary,
-  secondary,
-  noImg
-}) => (
+const getBgColor = idx => {
+  const color0 = BLUE_PERCENT(0.1)
+  const color1 = RED_PERCENT(0.32)
+
+  const flip = Math.floor(idx / 2) % 2 !== 0
+  let bgColor = idx % 2 === 0 ? color0 : color1
+
+  if (flip) {
+    if (bgColor === color0) {
+      bgColor = color1
+    } else {
+      bgColor = color0
+    }
+  }
+
+  return bgColor
+}
+
+const ImgWrapper = s.div`
+  background-color: ${({ idx }) => getBgColor(idx)};
+  padding: 2rem 0;
+`
+
+const CardContent = ({ name, link, description, img, idx }) => (
   <Link href={link} target="_blank">
-    {/* {!noImg && (
-      <Img fluid={image.src.childImageSharp.fluid} className="img-fluid" />
-    )} */}
-    <CardHeader href={link} color={primary}>
-      {title}
-    </CardHeader>
-    {/* <Subheader color={secondary}>{authors}</Subheader> */}
-    <Content>{abstract}</Content>
+    <ImgWrapper idx={idx}>
+      <Img
+        fluid={img.childImageSharp.fluid}
+        style={{ width: '280px', display: 'block', margin: '0 auto' }}
+      />
+    </ImgWrapper>
+    <CardHeader href={link}>{name}</CardHeader>
+    <Content>{description}</Content>
   </Link>
 )
 
@@ -90,6 +100,34 @@ const Card = ({ className, children, flush }) => (
 )
 
 const Products = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allFile(filter: { relativePath: { eq: "products.json" } }) {
+        edges {
+          node {
+            childrenProductsJson {
+              img {
+                childImageSharp {
+                  fluid(maxWidth: 1100) {
+                    ...GatsbyImageSharpFluid
+                    src
+                  }
+                }
+              }
+              name
+              description
+              link
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const {
+    node: { childrenProductsJson: products }
+  } = data.allFile.edges[0]
+
   return (
     <Container>
       <Row style={{ padding: '3rem 3rem' }}>
@@ -99,10 +137,10 @@ const Products = () => {
         </Col>
         <Col>
           <Row>
-            {ProductsJSON.map(product => (
+            {products.map((product, idx) => (
               <Col md={6}>
                 <Card>
-                  <CardContent {...product} />
+                  <CardContent {...product} idx={idx} />
                 </Card>
               </Col>
             ))}

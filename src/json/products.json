@@ -1,26 +1,38 @@
 [
   {
-    "title": "DP+",
-    "description": "asdasdasdasdasdasdasd"
+    "name": "DP+",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "img": "../images/DP+.png",
+    "link": "https://apps.apple.com/us/app/dp/id1550818171"
   },
   {
-    "title": "Projects @ The DP",
-    "description": "asdasdasdasdasdasdasd"
+    "name": "Projects @ The DP",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "img": "../images/project-page.png",
+    "link": "https://projects.thedp.com/"
   },
   {
-    "title": "Jay",
-    "description": "asdasdasdasdasdasdasd"
+    "name": "Jay",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "img": "../images/project-page.png",
+    "link": "https://projects.thedp.com/"
   },
   {
-    "title": "The Daily Pennsylvanian Website",
-    "description": "asdasdasdasdasdasdasd"
+    "name": "The Daily Pennsylvanian Website",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "img": "../images/dp-website.png",
+    "link": "https://www.thedp.com/"
   },
   {
-    "title": "34th Street Magazine Website",
-    "description": "asdasdasdasdasdasdasd"
+    "name": "34th Street Magazine Website",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "img": "../images/street-website.png",
+    "link": "https://www.34st.com/"
   },
   {
-    "title": "Under the Button Website",
-    "description": "asdasdasdasdasdasdasd"
+    "name": "Under the Button Website",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "img": "../images/utb-website.png",
+    "link": "https://www.underthebutton.com/"
   }
 ]
