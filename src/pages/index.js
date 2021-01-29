@@ -1,8 +1,15 @@
 import React from 'react'
 import s from 'styled-components'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import { Row, Col } from 'react-bootstrap'
 
-import { Container } from '../components'
-import { POPPINS_BOLD, POPPINS_REGULAR } from '../styles/fonts'
+import { Container, LatestWork } from '../components'
+import {
+  POPPINS_BOLD,
+  POPPINS_REGULAR,
+  POPPINS_SEMI_BOLD
+} from '../styles/fonts'
 
 const Hero = s.div`
   background: linear-gradient(#FB7264, #19BAFD);
@@ -28,15 +35,45 @@ const Checkout = s.p`
   margin-top: 2rem;
 `
 
-const LatestWork = () => {
-  
+const RecruitmentRow = s(Row)`
+  padding: 1rem 3rem;
+  background-color: #FB7264;
+  border-radius: 22px;
+`
+
+const Recruitment = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "web-building.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  const img = data.file
+
+  return (
+    <RecruitmentRow style={{ margin: '2rem 2rem' }}>
+      <Col md={6}></Col>
+      <Col>
+        <Img fluid={img.childImageSharp.fluid} />
+      </Col>
+    </RecruitmentRow>
+  )
 }
 
 const Index = () => {
   return (
     <Container>
       <Hero>
-        <span role="emoji" style={{ fontSize: '4rem' }}> 👋 </span>
+        <span role="emoji" style={{ fontSize: '4rem' }}>
+          {' '}
+          👋{' '}
+        </span>
         <HelloWorld> Hello world. </HelloWorld>
         <p style={{ fontSize: '2.5rem' }}>We're the DP Tech Dept</p>
         <SubHead>
@@ -45,6 +82,8 @@ const Index = () => {
         </SubHead>
         <Checkout> Check out our featured projects </Checkout>
       </Hero>
+      <LatestWork />
+      <Recruitment />
     </Container>
   )
 }
