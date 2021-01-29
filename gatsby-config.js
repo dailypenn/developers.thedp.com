@@ -3,6 +3,7 @@ module.exports = {
     title: 'DP Tech'
   },
   plugins: [
+    `gatsby-transformer-json`,
     'gatsby-plugin-styled-components',
     // {
     //   resolve: "gatsby-plugin-google-analytics",
@@ -17,9 +18,15 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/images/'
+        path: `${__dirname}/src/images`
       },
-      __key: 'images'
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'json',
+        path: `${__dirname}/src/json`
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,

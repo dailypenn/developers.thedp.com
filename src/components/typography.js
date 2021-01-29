@@ -5,6 +5,11 @@ import { POPPINS_BOLD } from '../styles/fonts'
 
 export const PageTitle = s.h1`
   ${POPPINS_BOLD}
+  font-size: 4rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2.5rem;
+  }
 `
 
 export const PageDescription = s.p`

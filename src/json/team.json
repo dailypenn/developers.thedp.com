@@ -1,31 +1,33 @@
 [
   {
-    "section": "Leadership",
-    "description": "",
+    "name": "Leadership",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "members": [
       {
-        "name": "Peter Baile Chen",
+        "name": "Peter Chen",
         "tags": ["Director"],
         "emoji": "🐯",
-        "from": "Hong Kong",
+        "from": "HK",
         "img": "../images/members/peter.jpg"
       }
     ]
   },
   {
-    "section": "Mobile Developers",
-    "description": "",
+    "name": "Mobile Developers",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "members": [
       {
         "name": "Justin Lieb",
         "tags": ["Co-lead"],
         "from": "California",
+        "emoji": "🪀",
         "img": "../images/members/lieb.jpeg"
       },
       {
         "name": "Raunaq Singh",
         "tags": ["Co-lead"],
-        "from": "California",
+        "from": "Philly",
+        "emoji": "🍯",
         "img": "../images/members/raunaq.jpg"
       },
       {
@@ -37,8 +39,8 @@
     ]
   },
   {
-    "section": "Web Developers",
-    "description": "",
+    "name": "Web Developers",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "members": [
       {
         "name": "Calvin Hu",
@@ -55,8 +57,8 @@
     ]
   },
   {
-    "section": "Designers",
-    "description": "",
+    "name": "Designers",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "members": [
       {
         "name": "Isabel Liang",
@@ -67,8 +69,20 @@
       {
         "name": "Felicity Yick",
         "tags": ["Web Design"],
-        "from": "Hong Kong",
+        "from": "HK",
         "img": "../images/members/felicity.jpg"
+      },
+      {
+        "name": "Alana Kelly",
+        "tags": ["Mobile Design"],
+        "from": "",
+        "img": "../images/members/alana.jpg"
+      },
+      {
+        "name": "Mia Kim",
+        "tags": ["Mobile Design"],
+        "from": "",
+        "img": "../images/members/mia.jpeg"
       }
     ]
   }
