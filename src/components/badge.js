@@ -1,6 +1,8 @@
+import React from 'react'
 import s from 'styled-components'
 
 import { POPPINS_REGULAR } from '../styles/fonts'
+import { BLUE } from '../styles/constants'
 
 export const Badge = s.div`
   background-color: rgba(25,186,253,0.1);
@@ -13,4 +15,25 @@ export const Badge = s.div`
   float: left;
   margin-right: 1rem;
   text-align: center;
+`
+
+const ApplyButton = s.div`
+  background-color: ${BLUE};
+  ${POPPINS_REGULAR}
+  border-radius: ${({ radius = '6px' }) => radius}px;
+  width: 5rem;
+  text-align: center;
+  padding: 0.2rem 1rem;
+  color: white;
+`
+
+export const ApplyButtonNav = s.button`
+  background-color: ${BLUE};
+  ${POPPINS_REGULAR}
+  border-radius: 21px;
+  width: 5rem;
+  text-align: center;
+  padding: 0.2rem 1rem;
+  color: white;
+  margin-right: 2rem;
 `
