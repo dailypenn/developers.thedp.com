@@ -28,21 +28,22 @@ const Checkout = s.p`
   margin-top: 2rem;
 `
 
+const LatestWork = () => {
+  
+}
+
 const Index = () => {
   return (
     <Container>
       <Hero>
-        <span role="img" style={{ fontSize: '4rem' }}> 👋 </span>
+        <span role="emoji" style={{ fontSize: '4rem' }}> 👋 </span>
         <HelloWorld> Hello world. </HelloWorld>
         <p style={{ fontSize: '2.5rem' }}>We're the DP Tech Dept</p>
-
         <SubHead>
           We power everything digital by The Daily Pennsylvanian, <br /> Penn's
           independent, student-run newspaper.
         </SubHead>
-
         <Checkout> Check out our featured projects </Checkout>
-        
       </Hero>
     </Container>
   )
