@@ -46,13 +46,15 @@
       {
         "name": "Calvin Hu",
         "tags": ["Lead"],
-        "from": "California",
+        "from": "Philly",
+        "emoji": "🐓",
         "img": "../images/members/calvin.jpg"
       },
       {
         "name": "Nassim Motya",
         "tags": ["Web"],
-        "from": "California",
+        "emoji": "🍑",
+        "from": "Philly",
         "img": "../images/members/nassim.png"
       }
     ]
