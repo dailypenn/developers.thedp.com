@@ -21,7 +21,7 @@ const LINKS = [
 ]
 
 const NavText = ({ link, name }) => (
-  <StyledLink to={link} style={{ marginRight: '1rem' }}>
+  <StyledLink to={link} style={{ marginRight: '2rem' }}>
     <Navbar.Text>{name}</Navbar.Text>
   </StyledLink>
 )

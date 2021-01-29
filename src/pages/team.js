@@ -14,6 +14,10 @@ const CardWrapper = s(Row)`
   box-shadow: 0px 0px 15px rgba(0,0,0,0.06);
   padding: 2rem 1rem;
   margin-top: 2rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem 0;
+  }
 `
 
 const CardTitle = s.p`
@@ -50,6 +54,11 @@ const SectionWrapper = s.div`
   background-color: ${({ idx }) => (idx % 2 === 0 ? LIGHT_BLUE : WHITE)};
   padding: 4rem 7rem;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+  @media screen and (max-width: 768px) {
+    padding: 4rem 1rem;
+    text-align: center;
+  }
 `
 
 const Members = ({ members }) => (
@@ -70,6 +79,10 @@ const TeamDescription = s.p`
   ${POPPINS_LIGHT}
   width: 40%;
   margin-top: 0.9rem;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 const PageDescription = s.p`
@@ -79,6 +92,10 @@ const PageDescription = s.p`
 
   @media screen and (max-width: 992px) {
     padding: 0 10rem;
+  }
+
+  @media screen and (max-width: 667px) {
+    padding: 0 1rem;
   }
 `
 
