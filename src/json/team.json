@@ -18,21 +18,21 @@
     "members": [
       {
         "name": "Justin Lieb",
-        "tags": ["Co-lead"],
-        "from": "California",
+        "tags": ["Co-Lead", "Product Manager"],
+        "from": "Los Angeles",
         "emoji": "🪀",
         "img": "../images/members/lieb.jpeg"
       },
       {
         "name": "Raunaq Singh",
-        "tags": ["Co-lead"],
+        "tags": ["Co-Lead"],
         "from": "Philly",
         "emoji": "🍯",
         "img": "../images/members/raunaq.jpg"
       },
       {
         "name": "Elizabeth Powell",
-        "tags": ["Mobile"],
+        "tags": ["Co-Lead"],
         "emoji": "🥶",
         "from": "NJ",
         "img": "../images/members/liz.jpeg"
