@@ -4,10 +4,10 @@ import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Row, Col } from 'react-bootstrap'
 
-import { Container } from '../components'
+import { Container, Chevron } from '../components'
 import { PageTitle, PageDescription } from '../components/typography'
 import { POPPINS_MEDIUM, POPPINS_REGULAR } from '../styles/fonts'
-import { BLUE_PERCENT, RED_PERCENT } from '../styles/constants'
+import { BLUE_PERCENT, RED_PERCENT, BLUE, RED } from '../styles/constants'
 
 const WHITE = `#FFFFFF`
 const TEXT_GREY = `#494748`
@@ -57,10 +57,7 @@ const Content = s.p`
   ${POPPINS_REGULAR}
 `
 
-const getBgColor = idx => {
-  const color0 = BLUE_PERCENT(0.1)
-  const color1 = RED_PERCENT(0.32)
-
+const getBgColor = (idx, color0, color1) => {
   const flip = Math.floor(idx / 2) % 2 !== 0
   let bgColor = idx % 2 === 0 ? color0 : color1
 
@@ -76,12 +73,13 @@ const getBgColor = idx => {
 }
 
 const ImgWrapper = s.div`
-  background-color: ${({ idx }) => getBgColor(idx)};
+  background-color: ${({ idx }) =>
+    getBgColor(idx, BLUE_PERCENT(0.1), RED_PERCENT(0.32))};
   padding: 2rem 0;
 `
 
 const CardContent = ({ name, link, description, img, idx }) => (
-  <Link href={link} target="_blank">
+  <>
     <ImgWrapper idx={idx}>
       <Img
         fluid={img.childImageSharp.fluid}
@@ -89,8 +87,11 @@ const CardContent = ({ name, link, description, img, idx }) => (
       />
     </ImgWrapper>
     <CardHeader href={link}>{name}</CardHeader>
-    <Content>{description}</Content>
-  </Link>
+    <Content>
+      <p style={{ paddingRight: '1rem' }}>{description} </p>
+      <Chevron bgColor={getBgColor(idx, BLUE, RED)} color={WHITE} floatRight />
+    </Content>
+  </>
 )
 
 const Card = ({ className, children, flush }) => (

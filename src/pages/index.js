@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { Row, Col } from 'react-bootstrap'
 
-import { Container, LatestWork } from '../components'
+import { Container, LatestWork, Chevron } from '../components'
 import {
   POPPINS_BOLD,
   POPPINS_REGULAR,
@@ -18,6 +18,8 @@ const Hero = s.div`
   ${POPPINS_REGULAR}
   padding-top: 3rem;
   padding-bottom: 1rem;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 `
 
 const HelloWorld = s.h1`
@@ -80,7 +82,7 @@ const Index = () => {
           We power everything digital by The Daily Pennsylvanian, <br /> Penn's
           independent, student-run newspaper.
         </SubHead>
-        <Checkout> Check out our featured projects </Checkout>
+        <Checkout> Check out our featured projects <Chevron/> </Checkout>
       </Hero>
       <LatestWork />
       <Recruitment />
