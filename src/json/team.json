@@ -71,6 +71,13 @@
         "img": "../images/members/isabel.png"
       },
       {
+        "name": "Ava Cruz",
+        "tags": ["Design Boss Emeritus"],
+        "emoji": "🥑",
+        "from": "Philly",
+        "img": "../images/members/ava.JPG"
+      },
+      {
         "name": "Felicity Yick",
         "tags": ["Web Design"],
         "from": "HK",
