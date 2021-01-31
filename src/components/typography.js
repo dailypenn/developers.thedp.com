@@ -1,3 +1,4 @@
+import React from 'react'
 import s from 'styled-components'
 import { Link } from 'gatsby'
 
@@ -27,3 +28,13 @@ export const StyledAnchor = s.a`
   color: #000000 !important;
   text-decoration: none !important;
 `
+
+export const URL = ({ link, children }) => {
+  if (link.includes('http'))
+    return (
+      <StyledAnchor href={link} target="_blank">
+        {children}
+      </StyledAnchor>
+    )
+  return <StyledLink to={link}>{children}</StyledLink>
+}

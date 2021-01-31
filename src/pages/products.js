@@ -46,6 +46,10 @@ const Content = s.p`
   font-size: 90%;
   margin-top: 4rem;
   ${POPPINS_REGULAR}
+
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+  }
 `
 
 const getBgColor = (idx, color0, color1) => {
@@ -69,18 +73,30 @@ const ImgWrapper = s.div`
   padding: 2rem 0;
 `
 
+const StyledImg = s(Img)`
+  width: 280px;
+  display: block;
+  margin: 0 auto;
+
+  @media (max-width: 992px) {
+    width: 200px;
+  }
+`
+
 const CardContent = ({ name, link, description, img, idx }) => (
   <>
     <ImgWrapper idx={idx}>
-      <Img
-        fluid={img.childImageSharp.fluid}
-        style={{ width: '280px', display: 'block', margin: '0 auto' }}
-      />
+      <StyledImg fluid={img.childImageSharp.fluid} />
     </ImgWrapper>
     <CardHeader href={link}>{name}</CardHeader>
     <Content>
       <p style={{ paddingRight: '1rem' }}>{description} </p>
-      <Chevron bgColor={getBgColor(idx, BLUE, RED)} color={WHITE} floatRight />
+      <Chevron
+        bgColor={getBgColor(idx, BLUE, RED)}
+        color={WHITE}
+        floatRight
+        link={link}
+      />
     </Content>
   </>
 )
@@ -90,6 +106,14 @@ const Card = ({ className, children, flush }) => (
     {children}
   </CardWrapper>
 )
+
+const StyledRow = s(Row)`
+  padding: 0 3rem;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
+`
 
 const Products = () => {
   const data = useStaticQuery(graphql`
@@ -122,8 +146,8 @@ const Products = () => {
 
   return (
     <Container>
-      <Row style={{ padding: '0 3rem', margin: '5rem 0 2rem 0' }}>
-        <Col md={4}>
+      <StyledRow style={{ margin: '5rem 0 2rem 0' }}>
+        <Col lg={4}>
           <PageTitle> Our Products </PageTitle>
           <PageDescription>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -132,7 +156,7 @@ const Products = () => {
             aliquip ex ea commodo consequat.
           </PageDescription>
         </Col>
-        <Col>
+        <Col lg={8}>
           <Row>
             {products.map((product, idx) => (
               <Col md={6}>
@@ -143,7 +167,7 @@ const Products = () => {
             ))}
           </Row>
         </Col>
-      </Row>
+      </StyledRow>
     </Container>
   )
 }

@@ -3,7 +3,7 @@ import s from 'styled-components'
 import { Row, Col } from 'react-bootstrap'
 
 import { POPPINS_REGULAR } from '../styles/fonts'
-import { StyledAnchor, StyledLink } from './typography'
+import { StyledLink, URL } from './typography'
 
 const FooterText = s.p`
   ${POPPINS_REGULAR}
@@ -90,16 +90,6 @@ const FooterLogo = s.img`
   bottom: -25px;
   height: 50px;
 `
-
-const URL = ({ link, children }) => {
-  if (link.includes('http'))
-    return (
-      <StyledAnchor href={link} target="_blank">
-        {children}
-      </StyledAnchor>
-    )
-  return <StyledLink to={link}>{children}</StyledLink>
-}
 
 export const Footer = () => (
   <StyledRow>

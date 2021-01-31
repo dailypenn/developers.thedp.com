@@ -3,6 +3,7 @@ import s from 'styled-components'
 
 import ChevronSVG from '../../static/icons/chevron-right.svg'
 import { WHITE } from '../styles/constants'
+import { URL } from './typography'
 
 const Wrapper = s.span`
   border-radius: 50%;
@@ -14,11 +15,25 @@ const Wrapper = s.span`
   margin-left: 0.4rem;
   color: ${({ color = 'black' }) => color};
   font-size: 16px;
-  ${({ floatRight }) => floatRight ? 'float: right;' : ''}
+  ${({ floatRight }) => (floatRight ? 'float: right;' : '')}
+
+  :hover {
+    cursor: pointer;
+  }
 `
 
-export const Chevron = ({ bgColor, color, floatRight = false }) => {
+export const Chevron = ({ bgColor, color, floatRight = false, link }) => {
   const translate = floatRight ? 'translate(3px, 0px)' : 'translate(0, -1px)'
+
+  if (link) {
+    return (
+      <URL link={link}>
+        <Wrapper bgColor={bgColor} color={color} floatRight={floatRight}>
+          <ChevronSVG style={{ transform: translate }} />
+        </Wrapper>
+      </URL>
+    )
+  }
 
   return (
     <Wrapper bgColor={bgColor} color={color} floatRight={floatRight}>
