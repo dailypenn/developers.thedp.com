@@ -19,7 +19,7 @@ const LatestWorkWrapper = s.div`
   margin-bottom: 2rem;
 
   @media (max-width: 992px) {
-    padding-left: 2rem;
+    padding: 0 2rem;
     margin-right: 0;
   }
 `
@@ -47,6 +47,11 @@ const ProjectDescription = s.p`
   ${POPPINS_LIGHT}
   font-size: 0.8rem;
   width: 80%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 `
 
 const tags = ['React Native', 'Apollo', 'GraphQL']

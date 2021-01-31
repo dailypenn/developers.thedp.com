@@ -61,12 +61,13 @@
   },
   {
     "name": "Designers",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "The design department is responsible for the branding and visual language from our print product to our digital presence.",
     "members": [
       {
         "name": "Isabel Liang",
-        "tags": ["Design boss"],
-        "from": "",
+        "tags": ["Design Boss"],
+        "emoji": "🐈",
+        "from": "Texas",
         "img": "../images/members/isabel.png"
       },
       {
@@ -78,13 +79,13 @@
       {
         "name": "Alana Kelly",
         "tags": ["Mobile Design"],
-        "from": "",
+        "from": "Wisconsin",
         "img": "../images/members/alana.jpg"
       },
       {
         "name": "Mia Kim",
         "tags": ["Mobile Design"],
-        "from": "",
+        "from": "Florida",
         "img": "../images/members/mia.jpeg"
       }
     ]
