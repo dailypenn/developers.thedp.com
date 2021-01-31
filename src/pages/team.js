@@ -8,12 +8,15 @@ import { Container, PageTitle, Badge } from '../components'
 import { LIGHT_BLUE, WHITE, RED, RED_PERCENT } from '../styles/constants'
 import { POPPINS_SEMI_BOLD, POPPINS_LIGHT, POPPINS_BOLD } from '../styles/fonts'
 
-const CardWrapper = s(Row)`
+const CardWrapper = s.div`
   background-color: ${WHITE};
   border-radius: 24px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.06);
   padding: 2rem 1rem;
   margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 1rem;
 
   :hover {
     transform: scale(1.01);
@@ -23,12 +26,17 @@ const CardWrapper = s(Row)`
 
   @media screen and (max-width: 768px) {
     padding: 2rem 0;
+    margin: 1rem 0.5rem;
   }
 `
 
 const CardTitle = s.p`
   font-size: 1.4rem;
   ${POPPINS_BOLD}
+
+  @media screen and (max-width: 768px) {
+    margin-top: 1rem;
+  }
 `
 
 const CardDescription = s.div`
@@ -37,7 +45,7 @@ const CardDescription = s.div`
 `
 
 const Card = ({ name, tags, img, emoji, from }) => (
-  <CardWrapper style={{ marginRight: '1rem' }}>
+  <CardWrapper>
     <Col md={6}>
       <Img
         fluid={img.childImageSharp.fluid}
@@ -70,7 +78,7 @@ const SectionWrapper = s.div`
 const Members = ({ members }) => (
   <Row>
     {members.map(member => (
-      <Col md={4}>
+      <Col lg={4}>
         <Card {...member} />
       </Col>
     ))}

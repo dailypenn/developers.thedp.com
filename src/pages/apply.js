@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import { Container, Badge } from '../components'
+import { Container, Badge, PageTitle, PageDescription } from '../components'
 import { BLUE_PERCENT, RED } from '../styles/constants'
 import { POPPINS_BOLD, POPPINS_REGULAR } from '../styles/fonts'
 
@@ -63,10 +63,13 @@ const Recruitment = () => {
   return (
     <Row style={{ margin: '5rem 4rem 5rem 3rem', textAlign: 'center' }}>
       <Col md={6}>
-        <RecruitmentTitle> We're Recruiting! </RecruitmentTitle>
-        <RecruitmentDescription>
-          The DP Tech Department is looking for coders.......
-        </RecruitmentDescription>
+        <PageTitle> We're Recruiting! </PageTitle>
+        <PageDescription>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </PageDescription>
         {roles.map(role => (
           <Badge> {role} </Badge>
         ))}

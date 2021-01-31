@@ -4,8 +4,8 @@ import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Row, Col } from 'react-bootstrap'
 
-import { Container, Chevron } from '../components'
-import { POPPINS_MEDIUM, POPPINS_REGULAR, POPPINS_BOLD } from '../styles/fonts'
+import { Container, Chevron, PageTitle, PageDescription } from '../components'
+import { POPPINS_MEDIUM, POPPINS_REGULAR } from '../styles/fonts'
 import { BLUE_PERCENT, RED_PERCENT, BLUE, RED } from '../styles/constants'
 
 const WHITE = `#FFFFFF`
@@ -90,21 +90,6 @@ const Card = ({ className, children, flush }) => (
     {children}
   </CardWrapper>
 )
-
-const PageTitle = s.h1`
-  ${POPPINS_BOLD}
-  font-size: 4rem;
-
-  @media screen and (max-width: 768px) {
-    font-size: 2.5rem;
-  }
-`
-
-const PageDescription = s.p`
-  font-size: 0.9rem;
-  margin-top: 2rem;
-  ${POPPINS_REGULAR}
-`
 
 const Products = () => {
   const data = useStaticQuery(graphql`
