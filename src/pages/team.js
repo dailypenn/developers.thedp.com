@@ -151,7 +151,7 @@ const Teams = () => {
   } = data.allFile.edges[0]
 
   return (
-    <Container>
+    <Container title="Team | ">
       <div style={{ marginTop: '2rem' }}>
         <div style={{ textAlign: 'center' }}>
           <PageTitle> Meet the Team </PageTitle>

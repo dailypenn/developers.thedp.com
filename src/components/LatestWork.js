@@ -20,12 +20,17 @@ const LatestWorkWrapper = s.div`
 
   @media (max-width: 992px) {
     padding-left: 2rem;
+    margin-right: 0;
   }
 `
 
 const Title = s.h2`
   ${POPPINS_SEMI_BOLD}
   color: ${BLUE};
+
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
 `
 
 const ProjectName = s.h2`

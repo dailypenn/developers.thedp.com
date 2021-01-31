@@ -1,13 +1,13 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-export const Header = () => (
+export const Header = ({ title = '' }) => (
   <Helmet>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Best of Penn" />
-    <title>DP Tech</title>
+    <title>{`${title}DP Tech`}</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -16,32 +16,31 @@ export const Header = () => (
 
     <meta
       property="og:title"
-      content="Best of Penn | The Daily Pennsylvanian"
+      content="DP Tech"
     />
     <meta
       property="og:image"
       content="https://snworksceo.imgix.net/dpn/911a0997-d5e4-44f9-a21c-b4641280f6fe.sized-1000x1000.png"
     />
-    <meta property="og:description" content="Best of Penn" />
-    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Landing page of the DP Tech Department that showcases our products and team members" />
     <meta
       property="og:url"
-      content="https://projects.thedp.com/2021/best-of-penn"
+      content="https://tech.thedp.com/"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Best of Penn | The Daily Pennsylvanian"
+      content="DP Tech"
     />
     <meta
       name="twitter:image"
       content="https://snworksceo.imgix.net/dpn/911a0997-d5e4-44f9-a21c-b4641280f6fe.sized-1000x1000.png"
     />
-    <meta name="twitter:description" content="Best of Penn" />
+    <meta name="twitter:description" content="Landing page of the DP Tech Department that showcases our products and team members" />
     <meta
       name="twitter:url"
-      content="https://projects.thedp.com/2021/best-of-penn"
+      content="https://tech.thedp.com/"
     />
     <meta name="twitter:site" content="@dailypenn"></meta>
 

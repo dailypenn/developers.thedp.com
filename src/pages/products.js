@@ -145,7 +145,7 @@ const Products = () => {
   } = data.allFile.edges[0]
 
   return (
-    <Container>
+    <Container title="Products | ">
       <StyledRow style={{ margin: '5rem 0 2rem 0' }}>
         <Col lg={4}>
           <PageTitle> Our Products </PageTitle>

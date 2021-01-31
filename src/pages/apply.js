@@ -117,7 +117,7 @@ const Recruitment = () => {
 }
 
 const Apply = () => (
-  <Container>
+  <Container title="Apply | ">
     <Recruitment />
     <Wrapper>
       <IFrameWrapper>
