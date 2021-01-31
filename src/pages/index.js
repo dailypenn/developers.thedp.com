@@ -5,14 +5,9 @@ import Img from 'gatsby-image'
 import { Row, Col } from 'react-bootstrap'
 
 import { Container, LatestWork, Chevron } from '../components'
-import {
-  POPPINS_BOLD,
-  POPPINS_REGULAR,
-  POPPINS_SEMI_BOLD
-} from '../styles/fonts'
+import { POPPINS_BOLD, POPPINS_REGULAR } from '../styles/fonts'
 
 const Hero = s.div`
-  background: linear-gradient(#FB7264, #19BAFD);
   text-align: center;
   color: white;
   ${POPPINS_REGULAR}
@@ -20,6 +15,15 @@ const Hero = s.div`
   padding-bottom: 1rem;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  
+  animation: animateBg 5s linear infinite;
+  background-image: linear-gradient(0deg,#fb7264,#19bafd,#fb7264,#19bafd);
+  background-size: 100% 300%;
+
+  @keyframes animateBg {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 0% 100%; }
+  }
 `
 
 const HelloWorld = s.h1`
@@ -82,7 +86,10 @@ const Index = () => {
           We power everything digital by The Daily Pennsylvanian, <br /> Penn's
           independent, student-run newspaper.
         </SubHead>
-        <Checkout> Check out our featured projects <Chevron/> </Checkout>
+        <Checkout>
+          {' '}
+          Check out our featured projects <Chevron />{' '}
+        </Checkout>
       </Hero>
       <LatestWork />
       <Recruitment />
