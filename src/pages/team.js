@@ -156,10 +156,9 @@ const Teams = () => {
         <div style={{ textAlign: 'center' }}>
           <PageTitle> Meet the Team </PageTitle>
           <PageDescription>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            DP Tech is run by a group of skilled and hardworking students at
+            Penn, collaborating to bring the stories of The Daily Pennsylvanian
+            publications to the digital world.
           </PageDescription>
         </div>
         {teams.map((team, idx) => (

@@ -4,6 +4,7 @@ import s from 'styled-components'
 
 import { StyledLink } from './typography'
 import { ApplyButtonNav } from './badge'
+import { POPPINS_SEMI_BOLD } from '../styles/fonts'
 
 const LINKS = [
   {
@@ -20,9 +21,14 @@ const LINKS = [
   }
 ]
 
+const NavBarText = s(Navbar.Text)`
+  ${POPPINS_SEMI_BOLD}
+  color: black;
+`
+
 const NavText = ({ link, name }) => (
   <StyledLink to={link} style={{ marginRight: '2rem' }}>
-    <Navbar.Text>{name}</Navbar.Text>
+    <NavBarText style={{ color: 'black' }}>{name}</NavBarText>
   </StyledLink>
 )
 

@@ -1,7 +1,7 @@
 [
   {
     "name": "Leadership",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "The director manages the development of all DP Tech products and collaborates with other Daily Pennsylvanian teams, from editors to designers, in order to integrate them seamlessly.",
     "members": [
       {
         "name": "Peter Chen",
@@ -14,7 +14,7 @@
   },
   {
     "name": "Mobile Developers",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "The developers behind DP+, the iOS and Android app where you can keep up with the latest Daily Pennsylvanian, 34th Street, and Under the Button articles!",
     "members": [
       {
         "name": "Justin Lieb",
@@ -41,7 +41,7 @@
   },
   {
     "name": "Web Developers",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "The developers in charge of building project pages and maintaining the websites of The Daily Pennsylvanian, 34th Street, and Under the Button.",
     "members": [
       {
         "name": "Calvin Hu",
