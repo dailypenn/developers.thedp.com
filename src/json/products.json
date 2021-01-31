@@ -12,12 +12,6 @@
     "link": "https://projects.thedp.com/"
   },
   {
-    "name": "Jay",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "img": "../images/project-page.png",
-    "link": "https://projects.thedp.com/"
-  },
-  {
     "name": "The Daily Pennsylvanian Website",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "img": "../images/dp-website.png",

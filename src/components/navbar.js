@@ -32,7 +32,7 @@ const NavText = ({ link, name }) => (
   </StyledLink>
 )
 
-const Collapse = s(Navbar.Collapse)`
+const CollapseWrapper = s(Navbar.Collapse)`
   justify-content: flex-end;
   margin: 0.5rem 0;
 
@@ -60,13 +60,15 @@ export const NavBar = () => (
     <Navbar.Toggle style={{ border: 'none' }}>
       <img src="/menu.svg" />
     </Navbar.Toggle>
-    <Collapse>
-      {LINKS.map(link => (
-        <NavText {...link} />
-      ))}
-      <StyledLink to="/apply">
-        <ApplyButtonNav> Apply </ApplyButtonNav>
-      </StyledLink>
-    </Collapse>
+    <Navbar.Collapse className="justify-content-end">
+      {/* <CollapseWrapper> */}
+        {LINKS.map(link => (
+          <NavText {...link} />
+        ))}
+        <StyledLink to="/apply">
+          <ApplyButtonNav> Apply </ApplyButtonNav>
+        </StyledLink>
+      {/* </CollapseWrapper> */}
+    </Navbar.Collapse>
   </Navbar>
 )

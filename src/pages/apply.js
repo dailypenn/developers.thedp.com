@@ -4,8 +4,17 @@ import { Row, Col } from 'react-bootstrap'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import { Container, Badge, PageTitle, PageDescription } from '../components'
-import { BLUE_PERCENT, RED } from '../styles/constants'
+import {
+  Container,
+  Badge,
+  PageTitle,
+  PageDescription,
+  Chevron,
+  StyledLink,
+  StyledAnchor
+} from '../components'
+import { BLUE_PERCENT, RED, BLUE, WHITE } from '../styles/constants'
+import { POPPINS_BOLD } from '../styles/fonts'
 
 const Wrapper = s.div`
   background-color: ${BLUE_PERCENT(0.04)};
@@ -54,6 +63,12 @@ const StyledRow = s(Row)`
   }
 `
 
+const ApplyHere = s.span`
+  ${POPPINS_BOLD}
+  color: ${RED};
+  margin-left: 0.3rem;
+`
+
 const Recruitment = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -82,6 +97,15 @@ const Recruitment = () => {
         {roles.map(role => (
           <Badge> {role} </Badge>
         ))}
+        <StyledAnchor
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeduPvGWySAkxCWQwdrvpvSppx2455xjNRh1yi4aCn_lJnQ2Q/viewform"
+          target="_blank"
+        >
+          <div style={{ marginTop: '2rem' }}>
+            <Chevron bgColor={BLUE} color={WHITE} />{' '}
+            <ApplyHere> APPLY HERE </ApplyHere>
+          </div>
+        </StyledAnchor>
       </Col>
       <Col>
         <ImgWrapper>
