@@ -15,6 +15,12 @@ const CardWrapper = s(Row)`
   padding: 2rem 1rem;
   margin-top: 2rem;
 
+  :hover {
+    transform: scale(1.01);
+  }
+  transition: all 0.3s;
+  overflow: hidden;
+
   @media screen and (max-width: 768px) {
     padding: 2rem 0;
   }

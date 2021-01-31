@@ -19,7 +19,7 @@
       {
         "name": "Justin Lieb",
         "tags": ["Co-Lead", "Product Manager"],
-        "from": "Los Angeles",
+        "from": "LA",
         "emoji": "🪀",
         "img": "../images/members/lieb.jpeg"
       },
@@ -52,7 +52,7 @@
       },
       {
         "name": "Nassim Motya",
-        "tags": ["Web"],
+        "tags": ["Frontend"],
         "emoji": "🍑",
         "from": "Philly",
         "img": "../images/members/nassim.png"

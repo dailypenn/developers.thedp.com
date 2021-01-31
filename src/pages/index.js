@@ -4,8 +4,9 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { Row, Col } from 'react-bootstrap'
 
-import { Container, LatestWork, Chevron } from '../components'
+import { Container, LatestWork, Chevron, StyledLink } from '../components'
 import { POPPINS_BOLD, POPPINS_REGULAR } from '../styles/fonts'
+import { WHITE } from '../styles/constants'
 
 const Hero = s.div`
   text-align: center;
@@ -39,6 +40,7 @@ const SubHead = s.p`
 const Checkout = s.p`
   ${POPPINS_BOLD}
   margin-top: 2rem;
+  color: ${WHITE};
 `
 
 const RecruitmentRow = s(Row)`
@@ -86,10 +88,11 @@ const Index = () => {
           We power everything digital by The Daily Pennsylvanian, <br /> Penn's
           independent, student-run newspaper.
         </SubHead>
-        <Checkout>
-          {' '}
-          Check out our featured projects <Chevron />{' '}
-        </Checkout>
+        <StyledLink to="/products">
+          <Checkout>
+            Check out our featured projects <Chevron />
+          </Checkout>
+        </StyledLink>
       </Hero>
       <LatestWork />
       <Recruitment />

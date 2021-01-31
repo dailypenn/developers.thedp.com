@@ -3,26 +3,44 @@ import s from 'styled-components'
 import { Row, Col } from 'react-bootstrap'
 
 import { POPPINS_REGULAR } from '../styles/fonts'
+import { StyledAnchor, StyledLink } from './typography'
 
 const FooterText = s.p`
   ${POPPINS_REGULAR}
   font-size: 80%;
 `
 
-const LeftSections = ['Home', 'Team', 'Products', 'Blog']
+const LeftSections = [
+  {
+    title: 'Home',
+    link: '/'
+  },
+  {
+    title: 'Team',
+    link: '/team'
+  },
+  {
+    title: 'Products',
+    link: '/products'
+  }
+]
 
 const RightSections = [
   {
-    title: 'Projects @ The DP'
+    title: 'Projects @ The DP',
+    link: 'https://projects.thedp.com/'
   },
   {
-    title: 'The Daily Pennsylvanian'
+    title: 'The Daily Pennsylvanian',
+    link: 'https://www.thedp.com/'
   },
   {
-    title: '34th Street Magazine'
+    title: '34th Street Magazine',
+    link: 'https://www.34st.com/'
   },
   {
-    title: 'Under the Button'
+    title: 'Under the Button',
+    link: 'https://www.underthebutton.com/'
   }
 ]
 
@@ -65,6 +83,23 @@ const ColWithMargin = s(Col)`
   }
 `
 
+const FooterLogo = s.img`
+  position: absolute;
+  right: -10px;
+  bottom: -25px;
+  height: 50px;
+`
+
+const URL = ({ link, children }) => {
+  if (link.includes('http'))
+    return (
+      <StyledAnchor href={link} target="_blank">
+        {children}
+      </StyledAnchor>
+    )
+  return <StyledLink to={link}>{children}</StyledLink>
+}
+
 export const Footer = () => (
   <StyledRow>
     <ColWithMargin md={6}>
@@ -72,20 +107,27 @@ export const Footer = () => (
         Made with 💖 by the DP Tech Department <br /> &copy; The Daily
         Pennsylvanian 2021
       </FooterText>
-      <ApplyButton> APPLY </ApplyButton>
+      <StyledLink to="/apply">
+        <ApplyButton> APPLY </ApplyButton>
+      </StyledLink>
     </ColWithMargin>
     <Col md={6}>
       <Row>
         <LeftCol md={4}>
-          {LeftSections.map(section => (
-            <FooterText> {section} </FooterText>
+          {LeftSections.map(({ title, link }) => (
+            <URL link={link}>
+              <FooterText> {title} </FooterText>
+            </URL>
           ))}
         </LeftCol>
         <RightCol>
-          {RightSections.map(({ title }) => (
-            <FooterText> {title} </FooterText>
+          {RightSections.map(({ title, link }) => (
+            <URL link={link}>
+              <FooterText> {title} </FooterText>
+            </URL>
           ))}
         </RightCol>
+        <FooterLogo src="/logo-cube.png" />
       </Row>
     </Col>
   </StyledRow>
