@@ -11,9 +11,10 @@ export const Badge = s.span`
   padding: 0.2rem 0.5rem;
   color: black;
   font-size: 90%;
-  float: left;
   margin-right: 1rem;
   text-align: center;
+  display: inline-block;
+  margin-top: 1rem;
 `
 
 const ApplyButton = s.div`

@@ -41,16 +41,19 @@ const CardTitle = s.p`
 
 const CardDescription = s.div`
   ${POPPINS_LIGHT}
-  margin-top: 4.5rem;
+  margin-top: 2rem;
+`
+
+const MemberImg = s(Img)`
+  border-radius: 50%;
+  margin: auto;
+  border: 5px solid ${RED};
 `
 
 const Card = ({ name, tags, img, emoji, from }) => (
   <CardWrapper>
     <Col md={6}>
-      <Img
-        fluid={img.childImageSharp.fluid}
-        style={{ borderRadius: '50%', border: `5px solid ${RED}` }}
-      />
+      <MemberImg fluid={img.childImageSharp.fluid} />
     </Col>
     <Col md={6}>
       <CardTitle>

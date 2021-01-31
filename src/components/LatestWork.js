@@ -79,11 +79,9 @@ export const LatestWork = () => {
           <Col md={6}>
             <Img fluid={logo.childImageSharp.fluid} style={{ width: '50px' }} />
             <ProjectName> DP+ </ProjectName>
-            {/* <div>
             {tags.map(tag => (
               <Badge> {tag} </Badge>
             ))}
-            </div> */}
             <Divider />
             <ProjectDescription>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
