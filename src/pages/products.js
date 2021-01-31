@@ -5,12 +5,10 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { Row, Col } from 'react-bootstrap'
 
 import { Container, Chevron } from '../components'
-import { PageTitle, PageDescription } from '../components/typography'
-import { POPPINS_MEDIUM, POPPINS_REGULAR } from '../styles/fonts'
+import { POPPINS_MEDIUM, POPPINS_REGULAR, POPPINS_BOLD } from '../styles/fonts'
 import { BLUE_PERCENT, RED_PERCENT, BLUE, RED } from '../styles/constants'
 
 const WHITE = `#FFFFFF`
-const TEXT_GREY = `#494748`
 const BOX_SHADOW = `0px 5px 20px rgba(0, 0, 0, 0.1)`
 
 const CardWrapper = s.div.attrs(({ className }) => ({
@@ -31,13 +29,6 @@ const CardWrapper = s.div.attrs(({ className }) => ({
   transition: all 0.3s;
   margin-bottom: 60px;
   overflow: hidden;
-`
-
-const Link = s.a`
-  :hover {
-    color: initial;
-    text-decoration: none;
-  }
 `
 
 const CardHeader = s.h2`
@@ -100,6 +91,21 @@ const Card = ({ className, children, flush }) => (
   </CardWrapper>
 )
 
+const PageTitle = s.h1`
+  ${POPPINS_BOLD}
+  font-size: 4rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+`
+
+const PageDescription = s.p`
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  ${POPPINS_REGULAR}
+`
+
 const Products = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -131,10 +137,15 @@ const Products = () => {
 
   return (
     <Container>
-      <Row style={{ padding: '3rem 3rem' }}>
+      <Row style={{ padding: '0 3rem', margin: '5rem 0 2rem 0' }}>
         <Col md={4}>
           <PageTitle> Our Products </PageTitle>
-          <PageDescription> asdasdasdasdasdasdasd </PageDescription>
+          <PageDescription>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </PageDescription>
         </Col>
         <Col>
           <Row>

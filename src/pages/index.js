@@ -79,8 +79,7 @@ const Index = () => {
     <Container>
       <Hero>
         <span role="emoji" style={{ fontSize: '4rem' }}>
-          {' '}
-          👋{' '}
+          👋
         </span>
         <HelloWorld> Hello world. </HelloWorld>
         <p style={{ fontSize: '2.5rem' }}>We're the DP Tech Dept</p>
@@ -95,7 +94,6 @@ const Index = () => {
         </StyledLink>
       </Hero>
       <LatestWork />
-      <Recruitment />
     </Container>
   )
 }

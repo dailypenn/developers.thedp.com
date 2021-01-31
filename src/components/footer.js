@@ -54,6 +54,8 @@ const LeftCol = s(Col)`
 
   @media screen and (max-width: 768px) {
     border-right: none;
+    border-bottom: 1px solid rgba(224,224,224,0.5);
+    margin-bottom: 1rem;
   }
 `
 
@@ -79,7 +81,6 @@ const ColWithMargin = s(Col)`
   @media screen and (max-width: 768px) {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(224,224,224,0.5);
   }
 `
 

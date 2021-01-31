@@ -3,7 +3,7 @@ import s from 'styled-components'
 import { POPPINS_REGULAR } from '../styles/fonts'
 import { BLUE, BLUE_PERCENT } from '../styles/constants'
 
-export const Badge = s.div`
+export const Badge = s.span`
   background-color: ${({ bgColor = BLUE_PERCENT(0.1) }) => bgColor};
   ${POPPINS_REGULAR}
   border-radius: 5px;
