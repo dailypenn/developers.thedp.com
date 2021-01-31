@@ -6,7 +6,6 @@ import Img from 'gatsby-image'
 
 import { Container, Badge, PageTitle, PageDescription } from '../components'
 import { BLUE_PERCENT, RED } from '../styles/constants'
-import { POPPINS_BOLD, POPPINS_REGULAR } from '../styles/fonts'
 
 const Wrapper = s.div`
   background-color: ${BLUE_PERCENT(0.04)};
@@ -20,22 +19,20 @@ const IFrameWrapper = s.div`
   .iframe {
     height: calc(100% - 59px);
   }
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `
 
 const ImgWrapper = s.div`
   background-color: ${RED};
   border-radius: 22px;
   padding: 1rem;
-`
 
-const RecruitmentTitle = s.h2`
-  ${POPPINS_BOLD}
-  font-size: 4rem;
-`
-
-const RecruitmentDescription = s.p`
-  ${POPPINS_REGULAR}
-  margin-top: 2rem;
+  @media (max-width: 992px) {
+    margin-top: 2rem;
+  }
 `
 
 const roles = [
@@ -44,6 +41,18 @@ const roles = [
   'Backend Engineer',
   'UI/UX Designers'
 ]
+
+const StyledRow = s(Row)`
+  margin: 5rem 0;
+  padding-left: 5rem;
+  padding-right: 3rem;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+`
 
 const Recruitment = () => {
   const data = useStaticQuery(graphql`
@@ -61,8 +70,8 @@ const Recruitment = () => {
   const img = data.file
 
   return (
-    <Row style={{ margin: '5rem 4rem 5rem 3rem', textAlign: 'center' }}>
-      <Col md={6}>
+    <StyledRow>
+      <Col lg={6}>
         <PageTitle> We're Recruiting! </PageTitle>
         <PageDescription>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -79,7 +88,7 @@ const Recruitment = () => {
           <Img fluid={img.childImageSharp.fluid} />
         </ImgWrapper>
       </Col>
-    </Row>
+    </StyledRow>
   )
 }
 
