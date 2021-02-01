@@ -5,12 +5,12 @@ module.exports = {
   plugins: [
     `gatsby-transformer-json`,
     'gatsby-plugin-styled-components',
-    // {
-    //   resolve: "gatsby-plugin-google-analytics",
-    //   options: {
-    //     trackingId: "",
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-188534367-1'
+      }
+    },
     'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
@@ -27,14 +27,14 @@ module.exports = {
       options: {
         name: 'images',
         path: `${__dirname}/src/images`
-      },
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'json',
         path: `${__dirname}/src/json`
-      },
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -45,8 +45,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/logo-cube.png`, // This path is relative to the root of the site.
-      },
-    },
+        icon: `static/logo-cube.png` // This path is relative to the root of the site.
+      }
+    }
   ]
 }
