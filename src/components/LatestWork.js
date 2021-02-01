@@ -15,7 +15,7 @@ import { Badge } from './badge'
 const LatestWorkWrapper = s.div`
   padding: 1rem 1rem;
   padding-left: 15rem;
-  margin-right: 5rem;
+  margin-right: 10rem;
   margin-bottom: 2rem;
 
   @media (max-width: 992px) {
@@ -35,7 +35,7 @@ const Title = s.h2`
 
 const ProjectName = s.h2`
   ${POPPINS_MEDIUM}
-  margin-top: 2rem;
+  margin-top: 1rem;
 `
 
 const Divider = s.p`
@@ -59,15 +59,15 @@ const tags = ['React Native', 'Apollo', 'GraphQL']
 export const LatestWork = () => {
   const data = useStaticQuery(graphql`
     query {
-      screenshot: file(relativePath: { eq: "web-building.png" }) {
+      screenshot: file(relativePath: { eq: "app-screen.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1600) {
+          fluid(maxWidth: 1300) {
             ...GatsbyImageSharpFluid
           }
         }
       }
 
-      logo: file(relativePath: { eq: "DP+.png" }) {
+      logo: file(relativePath: { eq: "dp-plus-black.png" }) {
         childImageSharp {
           fluid(maxHeight: 100) {
             ...GatsbyImageSharpFluid
@@ -87,7 +87,7 @@ export const LatestWork = () => {
       <LatestWorkWrapper>
         <Row>
           <Col md={6}>
-            <Img fluid={logo.childImageSharp.fluid} style={{ width: '50px' }} />
+            <Img fluid={logo.childImageSharp.fluid} style={{ width: '60px' }} />
             <ProjectName> DP+ </ProjectName>
             {tags.map(tag => (
               <Badge> {tag} </Badge>
@@ -101,7 +101,10 @@ export const LatestWork = () => {
             </ProjectDescription>
           </Col>
           <Col md={6}>
-            <Img fluid={screenshot.childImageSharp.fluid} />
+            <Img
+              fluid={screenshot.childImageSharp.fluid}
+              style={{ width: '300px', margin: '0 auto' }}
+            />
           </Col>
         </Row>
       </LatestWorkWrapper>

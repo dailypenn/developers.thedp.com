@@ -74,7 +74,7 @@ const ImgWrapper = s.div`
 `
 
 const StyledImg = s(Img)`
-  width: 280px;
+  width: 270px;
   display: block;
   margin: 0 auto;
 
