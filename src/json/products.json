@@ -1,19 +1,19 @@
 [
   {
     "name": "DP+",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "The mobile app that allows you to read stories from all three publications at the palm of your hands. You can view the trending stories, search articles by keywords, and bookmark your favorites.",
     "img": "../images/DP+.png",
-    "link": "https://apps.apple.com/us/app/dp/id1550818171"
+    "link": "https://github.com/dailypenn/canada-goose"
   },
   {
     "name": "Projects @ The DP",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "Project pages and standalone interactives for all three publications, including the iconic election guide, year in review, covid page, and even more. Built in GatsbyJS and NextJS.",
     "img": "../images/project-page.png",
     "link": "https://projects.thedp.com/"
   },
   {
     "name": "The Daily Pennsylvanian Website",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "The main website for the Daily Pennsylvanian that delivers the latest news, photos, and videos. Receiving more than 10,000 views each day, thedp.com is the most widely used news website across the campus.",
     "img": "../images/dp-website.png",
     "link": "https://www.thedp.com/"
   },

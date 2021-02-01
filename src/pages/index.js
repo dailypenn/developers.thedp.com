@@ -94,6 +94,7 @@ const Index = () => {
         </StyledLink>
       </Hero>
       <LatestWork />
+      <Recruitment />
     </Container>
   )
 }
