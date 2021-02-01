@@ -4,9 +4,19 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { Row, Col } from 'react-bootstrap'
 
-import { Container, LatestWork, Chevron, StyledLink } from '../components'
-import { POPPINS_BOLD, POPPINS_REGULAR } from '../styles/fonts'
-import { WHITE } from '../styles/constants'
+import {
+  Container,
+  LatestWork,
+  Chevron,
+  StyledLink,
+  StyledAnchor
+} from '../components'
+import {
+  POPPINS_BOLD,
+  POPPINS_REGULAR,
+  POPPINS_SEMI_BOLD
+} from '../styles/fonts'
+import { WHITE, RED } from '../styles/constants'
 
 const Hero = s.div`
   text-align: center;
@@ -43,16 +53,60 @@ const Checkout = s.p`
   color: ${WHITE};
 `
 
-const RecruitmentRow = s(Row)`
+const RecruitmentRow = s.div`
   padding: 1rem 3rem;
-  background-color: #FB7264;
+  background-color: ${RED};
   border-radius: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 2rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem 2rem;
+    margin: 2rem 1rem;
+  }
+`
+
+const RecruitmentTitle = s.h1`
+  ${POPPINS_SEMI_BOLD}
+  font-size: 3rem;
+`
+
+const RecruitmentDescription = s.p`
+  margin-top: 2.5rem;
+  ${POPPINS_REGULAR}
+  font-size: 0.9rem;
+`
+
+const ApplyButton = s.div`
+  background-color: black;
+  ${POPPINS_REGULAR}
+  border-radius: 5px;
+  width: 5rem;
+  text-align: center;
+  padding: 0.2rem 1rem;
+  color: white;
+  margin-top: 4rem;
+
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+  }
+`
+
+const LeftColWrapper = s.div`
+  padding-top: 4rem;
+  padding-right: 5rem;
+
+  @media (max-width: 992px) {
+    margin-bottom: 2rem;
+    padding-right: 0;
+  }
 `
 
 const Recruitment = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "web-building.png" }) {
+      img: file(relativePath: { eq: "web-building.png" }) {
         childImageSharp {
           fluid(maxWidth: 1600) {
             ...GatsbyImageSharpFluid
@@ -62,11 +116,27 @@ const Recruitment = () => {
     }
   `)
 
-  const img = data.file
+  const { img } = data
 
   return (
-    <RecruitmentRow style={{ margin: '2rem 2rem' }}>
-      <Col md={6}></Col>
+    <RecruitmentRow>
+      <Col lg={6}>
+        <LeftColWrapper>
+          <RecruitmentTitle> We're Recruiting! </RecruitmentTitle>
+          <RecruitmentDescription>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </RecruitmentDescription>
+          <StyledAnchor
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeduPvGWySAkxCWQwdrvpvSppx2455xjNRh1yi4aCn_lJnQ2Q/viewform"
+            target="_blank"
+          >
+            <ApplyButton> Apply </ApplyButton>
+          </StyledAnchor>
+        </LeftColWrapper>
+      </Col>
       <Col>
         <Img fluid={img.childImageSharp.fluid} />
       </Col>
