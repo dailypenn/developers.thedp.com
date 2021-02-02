@@ -45,7 +45,7 @@ const Divider = s.p`
 
 const ProjectDescription = s.p`
   ${POPPINS_LIGHT}
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   width: 80%;
 
   @media (max-width: 768px) {
@@ -94,10 +94,9 @@ export const LatestWork = () => {
             ))}
             <Divider />
             <ProjectDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              The mobile app that allows you to read stories from all three
+              publications at the palm of your hands. You can view the trending
+              stories, search articles by keywords, and bookmark your favorites.
             </ProjectDescription>
           </Col>
           <Col md={6}>

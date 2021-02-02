@@ -4,7 +4,13 @@ import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Row, Col } from 'react-bootstrap'
 
-import { Container, Chevron, PageTitle, PageDescription } from '../components'
+import {
+  Container,
+  Chevron,
+  PageTitle,
+  PageDescription,
+  StyledAnchor
+} from '../components'
 import { POPPINS_MEDIUM, POPPINS_REGULAR } from '../styles/fonts'
 import { BLUE_PERCENT, RED_PERCENT, BLUE, RED } from '../styles/constants'
 
@@ -44,7 +50,7 @@ const Content = s.p`
   margin-left: 40px;
   color: black;
   font-size: 90%;
-  margin-top: 4rem;
+  margin-top: 3rem;
   ${POPPINS_REGULAR}
 
   @media (max-width: 768px) {
@@ -115,6 +121,14 @@ const StyledRow = s(Row)`
   }
 `
 
+const StyledPageDescription = s(PageDescription)`
+  padding-right: 2rem;
+
+  @media (max-width: 992px) {
+    padding-right: 0rem;
+  }
+`
+
 const Products = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -149,12 +163,17 @@ const Products = () => {
       <StyledRow style={{ margin: '5rem 0 2rem 0' }}>
         <Col lg={4}>
           <PageTitle> Our Products </PageTitle>
-          <PageDescription>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </PageDescription>
+          <StyledPageDescription>
+            Building useful and elegant products is the central goal that unites
+            all of our members. The belief that we are doing great work is what
+            drives the department forward and keeps us motivated. At DP Tech, we
+            build both short term projects such as bi-weekly project pages and
+            long term projects including DP+ and websites redesign. For more
+            details, checkout our&nbsp;
+            <StyledAnchor href="https://github.com/dailypenn" target="_blank">
+              GitHub repos.
+            </StyledAnchor>
+          </StyledPageDescription>
         </Col>
         <Col lg={8}>
           <Row>

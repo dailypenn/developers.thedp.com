@@ -19,13 +19,13 @@
   },
   {
     "name": "34th Street Magazine Website",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "Styled using the iconic green tint, the website of 34th Street is where you can keep yourself updated with the pulse of music, film, and cultural news.",
     "img": "../images/street-website.png",
     "link": "https://www.34st.com/"
   },
   {
     "name": "Under the Button Website",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "Penn’s only intentionally satirical publication, known for its signature memes and snark, is a campus fixture for highlighting the pulse of student life.",
     "img": "../images/utb-website.png",
     "link": "https://www.underthebutton.com/"
   }

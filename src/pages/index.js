@@ -86,7 +86,7 @@ const ApplyButton = s.div`
   text-align: center;
   padding: 0.2rem 1rem;
   color: white;
-  margin-top: 4rem;
+  margin-top: 3rem;
 
   @media (max-width: 768px) {
     margin-top: 2rem;
@@ -124,10 +124,11 @@ const Recruitment = () => {
         <LeftColWrapper>
           <RecruitmentTitle> We're Recruiting! </RecruitmentTitle>
           <RecruitmentDescription>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            As a newly established department, DP Tech is actively looking for
+            passionate engineers who would love to expand the digital influence
+            of the DP around the campus. We understand that people come from
+            different backgrounds, so the qualities we value the most are willingness to
+            absorb new knowledge and persistence to contribute.
           </RecruitmentDescription>
           <StyledAnchor
             href="https://docs.google.com/forms/d/e/1FAIpQLSeduPvGWySAkxCWQwdrvpvSppx2455xjNRh1yi4aCn_lJnQ2Q/viewform"

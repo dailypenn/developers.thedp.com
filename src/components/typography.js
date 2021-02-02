@@ -25,8 +25,13 @@ export const StyledLink = s(Link)`
 `
 
 export const StyledAnchor = s.a`
-  color: #000000 !important;
+  color: #000000;
   text-decoration: none !important;
+
+  :hover {
+    color: #B5B4B4;
+    transition: 0.3s;
+  }
 `
 
 export const URL = ({ link, children }) => {
