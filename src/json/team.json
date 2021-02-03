@@ -5,10 +5,17 @@
     "members": [
       {
         "name": "Peter Chen",
-        "tags": ["Director"],
+        "tags": ["Co-Founder", "Director"],
         "emoji": "🐯",
         "from": "HK",
         "img": "../images/members/peter.jpg"
+      },
+      {
+        "name": "David Fan",
+        "tags": ["Co-Founder", "Analytics Manager Emeritus"],
+        "emoji": "🤩",
+        "from": "Manila",
+        "img": "../images/members/analytics/david.jpg"
       }
     ]
   },
@@ -69,13 +76,6 @@
         "emoji": "🎉",
         "from": "CA",
         "img": "../images/members/analytics/jasper.jpg"
-      },
-      {
-        "name": "David Fan",
-        "tags": ["Manager Emeritus"],
-        "emoji": "🤩",
-        "from": "Manila",
-        "img": "../images/members/analytics/david.jpg"
       }
     ]
   },
