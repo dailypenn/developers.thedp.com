@@ -13,7 +13,7 @@
     ]
   },
   {
-    "name": "Mobile Developers",
+    "name": "Mobile",
     "description": "The developers behind DP+, the iOS and Android app where you can keep up with the latest Daily Pennsylvanian, 34th Street, and Under the Button articles!",
     "members": [
       {
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "name": "Web Developers",
+    "name": "Web",
     "description": "The developers in charge of building project pages and maintaining the websites of The Daily Pennsylvanian, 34th Street, and Under the Button.",
     "members": [
       {
@@ -60,7 +60,20 @@
     ]
   },
   {
-    "name": "Designers",
+    "name": "Analytics",
+    "description": "DP Analytics is the data science and business analytics hub of the Daily Pennsylvanian. At Analytics, we seek to leverage modern tools and technologies to enhance the digital and data analytics capabilities of the DP.",
+    "members": [
+      {
+        "name": "Jasper Huang",
+        "tags": ["Manager"],
+        "emoji": "🎉",
+        "from": "CA",
+        "img": "../images/members/jasper.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Design",
     "description": "The design department is responsible for the branding and visual language from our print product to our digital presence.",
     "members": [
       {
