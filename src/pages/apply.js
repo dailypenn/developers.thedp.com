@@ -10,7 +10,6 @@ import {
   PageTitle,
   PageDescription,
   Chevron,
-  StyledLink,
   StyledAnchor
 } from '../components'
 import { BLUE_PERCENT, RED, BLUE, WHITE } from '../styles/constants'
@@ -91,10 +90,9 @@ const Recruitment = () => {
         <PageDescription>
           As a newly established department, DP Tech is actively looking for
           passionate engineers who would love to expand the digital influence of
-          the DP around the campus. We understand that people
-          come from different backgrounds, so the qualities we value the most
-          are willingness to absorb new knowledge and persistence to
-          contribute.
+          the DP around the campus. We understand that people come from
+          different backgrounds, so the qualities we value the most are
+          willingness to absorb new knowledge and persistence to contribute.
         </PageDescription>
         {roles.map(role => (
           <Badge> {role} </Badge>

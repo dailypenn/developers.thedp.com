@@ -12,6 +12,12 @@
     "link": "https://projects.thedp.com/"
   },
   {
+    "name": "Recommendation Engine",
+    "description": "The data science team at the DP created a dynamic more like this feature using DP-specific document embeddings to provide users with more relevant content. Built using Python and SQL",
+    "img": "../images/more-like-this.png",
+    "link": "https://github.com/dailypennanalytics/dpcontentrec"
+  },
+  {
     "name": "The Daily Pennsylvanian Website",
     "description": "The main website for the Daily Pennsylvanian that delivers the latest news, photos, and videos. Receiving more than 10,000 views each day, thedp.com is the most widely used news website across the campus.",
     "img": "../images/dp-website.png",

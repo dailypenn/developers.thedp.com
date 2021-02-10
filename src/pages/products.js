@@ -38,8 +38,8 @@ const CardWrapper = s.div.attrs(({ className }) => ({
 `
 
 const CardHeader = s.h2`
-  margin-right: 40px;
-  margin-left: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
   margin-top: 30px;
   color: black;
   ${POPPINS_MEDIUM}
