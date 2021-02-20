@@ -8,14 +8,14 @@
         "tags": ["Co-Founder", "Director"],
         "emoji": "🐯",
         "from": "HK",
-        "img": "../images/members/peter.jpg"
+        "img": "../images/members/leadership/peter.jpg"
       },
       {
         "name": "David Fan",
         "tags": ["Co-Founder", "Analytics Manager Emeritus"],
         "emoji": "🤩",
         "from": "Manila",
-        "img": "../images/members/analytics/david.jpg"
+        "img": "../images/members/leadership/david.jpg"
       }
     ]
   },
@@ -28,21 +28,28 @@
         "tags": ["Co-Lead", "Product Manager"],
         "from": "LA",
         "emoji": "🪀",
-        "img": "../images/members/lieb.jpeg"
+        "img": "../images/members/mobile/lieb.jpeg"
       },
       {
         "name": "Raunaq Singh",
         "tags": ["Co-Lead"],
         "from": "Philly",
         "emoji": "🍯",
-        "img": "../images/members/raunaq.jpg"
+        "img": "../images/members/mobile/raunaq.jpg"
       },
       {
         "name": "Elizabeth Powell",
         "tags": ["Co-Lead"],
         "emoji": "🥶",
         "from": "NJ",
-        "img": "../images/members/liz.jpeg"
+        "img": "../images/members/mobile/liz.jpeg"
+      },
+      {
+        "name": "Larry Huang",
+        "tags": ["Frontend"],
+        "emoji": "🤠",
+        "from": "Connecticut",
+        "img": "../images/members/mobile/larry.jpeg"
       }
     ]
   },
@@ -55,14 +62,28 @@
         "tags": ["Lead"],
         "from": "Philly",
         "emoji": "🐓",
-        "img": "../images/members/calvin.jpg"
+        "img": "../images/members/web/calvin.jpg"
       },
       {
         "name": "Nassim Motya",
         "tags": ["Frontend"],
         "emoji": "🍑",
         "from": "Philly",
-        "img": "../images/members/nassim.png"
+        "img": "../images/members/web/nassim.png"
+      },
+      {
+        "name": "Andy Jiang",
+        "tags": ["Frontend"],
+        "emoji": "🐼",
+        "from": "Florida",
+        "img": "../images/members/web/andy.png"
+      },
+      {
+        "name": "Akshay Sharma",
+        "tags": ["Frontend"],
+        "emoji": "🥳",
+        "from": "Nebraska",
+        "img": "../images/members/web/akshay.jpg"
       }
     ]
   },
@@ -88,32 +109,32 @@
         "tags": ["Design Boss"],
         "emoji": "🐈",
         "from": "Texas",
-        "img": "../images/members/isabel.png"
+        "img": "../images/members/design/isabel.png"
       },
       {
         "name": "Ava Cruz",
         "tags": ["Design Boss Emeritus"],
         "emoji": "🥑",
         "from": "Delaware",
-        "img": "../images/members/ava.JPG"
+        "img": "../images/members/design/ava.JPG"
       },
       {
         "name": "Felicity Yick",
         "tags": ["Web Design"],
         "from": "HK",
-        "img": "../images/members/felicity.jpg"
+        "img": "../images/members/design/felicity.jpg"
       },
       {
         "name": "Alana Kelly",
         "tags": ["Mobile Design"],
         "from": "Florida",
-        "img": "../images/members/alana.jpg"
+        "img": "../images/members/design/alana.jpg"
       },
       {
         "name": "Mia Kim",
         "tags": ["Mobile Design"],
         "from": "Wisconsin",
-        "img": "../images/members/mia.jpeg"
+        "img": "../images/members/design/mia.jpeg"
       }
     ]
   }
