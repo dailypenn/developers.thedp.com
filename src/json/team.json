@@ -1,21 +1,14 @@
 [
   {
-    "name": "Leadership",
-    "description": "The director manages the development of all DP Tech products and collaborates with other Daily Pennsylvanian teams, from editors to designers, in order to integrate them seamlessly.",
+    "name": "Emeritus",
+    "description": "The director manages the development of all DP Developer products and collaborates with other Daily Pennsylvanian teams, from editors to designers, in order to integrate them seamlessly.",
     "members": [
       {
-        "name": "Peter Chen",
-        "tags": ["Co-Founder", "Director"],
-        "emoji": "🐯",
-        "from": "HK",
-        "img": "../images/members/leadership/peter.jpg"
-      },
-      {
-        "name": "David Fan",
-        "tags": ["Co-Founder", "Analytics Manager Emeritus"],
-        "emoji": "🤩",
-        "from": "Manila",
-        "img": "../images/members/leadership/david.jpg"
+        "name": "Raunaq Singh",
+        "tags": ["Co-Lead"],
+        "from": "Philly",
+        "emoji": "🍯",
+        "img": "../images/members/mobile/raunaq.jpg"
       }
     ]
   },
@@ -29,13 +22,6 @@
         "from": "LA",
         "emoji": "🪀",
         "img": "../images/members/mobile/lieb.jpeg"
-      },
-      {
-        "name": "Raunaq Singh",
-        "tags": ["Co-Lead"],
-        "from": "Philly",
-        "emoji": "🍯",
-        "img": "../images/members/mobile/raunaq.jpg"
       },
       {
         "name": "Elizabeth Powell",
@@ -135,6 +121,26 @@
         "tags": ["Mobile Design"],
         "from": "Wisconsin",
         "img": "../images/members/design/mia.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Emeritus",
+    "description": "Our previous members, without whom our work would not be possible.",
+    "members": [
+      {
+        "name": "Peter Chen",
+        "tags": ["Co-Founder", "Director"],
+        "emoji": "🐯",
+        "from": "HK",
+        "img": "../images/members/leadership/peter.jpg"
+      },
+      {
+        "name": "David Fan",
+        "tags": ["Co-Founder", "Analytics Manager"],
+        "emoji": "🤩",
+        "from": "Manila",
+        "img": "../images/members/leadership/david.jpg"
       }
     ]
   }

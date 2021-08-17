@@ -25,7 +25,7 @@ export const Header = ({ title = '' }) => (
     <meta property="og:description" content="Landing page of the DP Tech Department that showcases our products and team members" />
     <meta
       property="og:url"
-      content="https://tech.thedp.com/"
+      content="https://developers.thedp.com/"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -40,7 +40,7 @@ export const Header = ({ title = '' }) => (
     <meta name="twitter:description" content="Landing page of the DP Tech Department that showcases our products and team members" />
     <meta
       name="twitter:url"
-      content="https://tech.thedp.com/"
+      content="https://developers.thedp.com/"
     />
     <meta name="twitter:site" content="@dailypenn"></meta>
 
