@@ -88,7 +88,7 @@ const Recruitment = () => {
       <Col lg={6}>
         <PageTitle> We're Recruiting! </PageTitle>
         <PageDescription>
-          As a newly established department, DP Tech is actively looking for
+          As a newly established department, DP Developers is actively looking for
           passionate engineers who would love to expand the digital influence of
           the DP around the campus. We understand that people come from
           different backgrounds, so the qualities we value the most are

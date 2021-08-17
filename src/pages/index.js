@@ -124,7 +124,7 @@ const Recruitment = () => {
         <LeftColWrapper>
           <RecruitmentTitle> We're Recruiting! </RecruitmentTitle>
           <RecruitmentDescription>
-            As a newly established department, DP Tech is actively looking for
+            As a newly established department, DP Developers is actively looking for
             passionate engineers who would love to expand the digital influence
             of the DP around the campus. We understand that people come from
             different backgrounds, so the qualities we value the most are willingness to
@@ -153,7 +153,7 @@ const Index = () => {
           👋
         </span>
         <HelloWorld> Hello world. </HelloWorld>
-        <p style={{ fontSize: '2.5rem' }}>We're the DP Tech Dept</p>
+        <p style={{ fontSize: '2.5rem' }}>We're the DP Developers!</p>
         <SubHead>
           We power everything digital by The Daily Pennsylvanian, <br /> Penn's
           independent, student-run newspaper.

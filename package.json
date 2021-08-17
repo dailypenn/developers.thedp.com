@@ -2,8 +2,8 @@
   "name": "dp-tech-website",
   "version": "1.0.0",
   "private": true,
-  "description": "DP Tech Website",
-  "author": "DP Tech Dept",
+  "description": "DP Developers Website",
+  "author": "DP Developers Dept",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",

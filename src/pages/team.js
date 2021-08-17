@@ -156,7 +156,7 @@ const Teams = () => {
         <div style={{ textAlign: 'center' }}>
           <PageTitle> Meet the Team </PageTitle>
           <PageDescription>
-            DP Tech is run by a group of skilled and hardworking students at
+            DP Developers is run by a group of skilled and hardworking students at
             Penn, collaborating to bring the stories of The Daily Pennsylvanian
             publications to the digital world.
           </PageDescription>

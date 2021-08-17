@@ -6,8 +6,8 @@ export const Header = ({ title = '' }) => (
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Best of Penn" />
-    <title>{`${title}DP Tech`}</title>
+    <meta name="description" content="Landing page of the DP Developers that showcases our products and team members." />
+    <title>{`${title}DP Developers`}</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -16,13 +16,13 @@ export const Header = ({ title = '' }) => (
 
     <meta
       property="og:title"
-      content="DP Tech"
+      content="DP Developers"
     />
     <meta
       property="og:image"
       content="https://storage.googleapis.com/tech-website/social-join.png"
     />
-    <meta property="og:description" content="Landing page of the DP Tech Department that showcases our products and team members" />
+    <meta property="og:description" content="Landing page of the DP Developers that showcases our products and team members." />
     <meta
       property="og:url"
       content="https://developers.thedp.com/"
@@ -31,13 +31,13 @@ export const Header = ({ title = '' }) => (
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="DP Tech"
+      content="DP Developers"
     />
     <meta
       name="twitter:image"
       content="https://storage.googleapis.com/tech-website/social-join.png"
     />
-    <meta name="twitter:description" content="Landing page of the DP Tech Department that showcases our products and team members" />
+    <meta name="twitter:description" content="Landing page of the DP Developers that showcases our products and team members." />
     <meta
       name="twitter:url"
       content="https://developers.thedp.com/"
