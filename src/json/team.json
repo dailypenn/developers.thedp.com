@@ -1,11 +1,11 @@
 [
   {
-    "name": "Emeritus",
+    "name": "Director",
     "description": "The director manages the development of all DP Developer products and collaborates with other Daily Pennsylvanian teams, from editors to designers, in order to integrate them seamlessly.",
     "members": [
       {
         "name": "Raunaq Singh",
-        "tags": ["Co-Lead"],
+        "tags": ["Director"],
         "from": "Philly",
         "emoji": "🍯",
         "img": "../images/members/mobile/raunaq.jpg"
