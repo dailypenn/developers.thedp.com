@@ -22,7 +22,7 @@ const Wrapper = s.div`
 
 const IFrameWrapper = s.div`
   margin: auto;
-  width: 60%;
+  width: 80%;
 
   .iframe {
     height: calc(100% - 59px);
@@ -121,7 +121,7 @@ const Apply = () => (
     <Recruitment />
     <Wrapper>
       <IFrameWrapper>
-        <iframe class="airtable-embed" src="https://airtable.com/embed/shrtQqnGLJJkuj8Zn?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shrtQqnGLJJkuj8Zn?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="600" style={{background: "transparent", border: "1px solid #ccc"}}></iframe>
       </IFrameWrapper>
     </Wrapper>
   </Container>
