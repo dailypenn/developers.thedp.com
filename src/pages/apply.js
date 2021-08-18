@@ -98,7 +98,7 @@ const Recruitment = () => {
           <Badge> {role} </Badge>
         ))}
         <StyledAnchor
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeduPvGWySAkxCWQwdrvpvSppx2455xjNRh1yi4aCn_lJnQ2Q/viewform"
+          href="https://airtable.com/shrtQqnGLJJkuj8Zn"
           target="_blank"
         >
           <div style={{ marginTop: '2rem' }}>
@@ -121,14 +121,7 @@ const Apply = () => (
     <Recruitment />
     <Wrapper>
       <IFrameWrapper>
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSeduPvGWySAkxCWQwdrvpvSppx2455xjNRh1yi4aCn_lJnQ2Q/viewform"
-          width="100%"
-          height="600"
-          frameBorder="0"
-          marginHeight="0"
-          marginWidth="0"
-        />
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shrtQqnGLJJkuj8Zn?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
       </IFrameWrapper>
     </Wrapper>
   </Container>
