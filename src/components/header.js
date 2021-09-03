@@ -20,7 +20,7 @@ export const Header = ({ title = '' }) => (
     />
     <meta
       property="og:image"
-      content="https://storage.googleapis.com/tech-website/social-join.png"
+      content="https://snworksceo.imgix.net/dpn/75b2a546-3e80-4e89-9bae-9dd69f898b72.sized-1000x1000.png?"
     />
     <meta property="og:description" content="Landing page of the DP Developers that showcases our products and team members." />
     <meta
@@ -35,7 +35,7 @@ export const Header = ({ title = '' }) => (
     />
     <meta
       name="twitter:image"
-      content="https://storage.googleapis.com/tech-website/social-join.png"
+      content="https://snworksceo.imgix.net/dpn/75b2a546-3e80-4e89-9bae-9dd69f898b72.sized-1000x1000.png?"
     />
     <meta name="twitter:description" content="Landing page of the DP Developers that showcases our products and team members." />
     <meta
