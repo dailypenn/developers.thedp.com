@@ -68,7 +68,7 @@ const ApplyHere = s.span`
   margin-left: 0.3rem;
 `
 
-const Recruitment = () => {
+const Recruitment = ({ open }) => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "web-building.png" }) {
@@ -84,47 +84,79 @@ const Recruitment = () => {
   const img = data.file
 
   return (
-    <StyledRow>
-      <Col lg={6}>
-        <PageTitle> We're Recruiting! </PageTitle>
-        <PageDescription>
-          As a newly established department, DP Developers is actively looking for
-          passionate engineers who would love to expand the digital influence of
-          the DP around the campus. We understand that people come from
-          different backgrounds, so the qualities we value the most are
-          willingness to absorb new knowledge and persistence to contribute.
-        </PageDescription>
-        {roles.map(role => (
-          <Badge> {role} </Badge>
-        ))}
-        <StyledAnchor
-          href="https://airtable.com/shrtQqnGLJJkuj8Zn"
-          target="_blank"
-        >
-          <div style={{ marginTop: '2rem' }}>
-            <Chevron bgColor={BLUE} color={WHITE} />{' '}
-            <ApplyHere> APPLY HERE </ApplyHere>
-          </div>
-        </StyledAnchor>
-      </Col>
-      <Col>
-        <ImgWrapper>
-          <Img fluid={img.childImageSharp.fluid} />
-        </ImgWrapper>
-      </Col>
-    </StyledRow>
+    <>
+      {open ? (
+        <StyledRow>
+          <Col lg={6}>
+            <PageTitle> We're Recruiting! </PageTitle>
+            <PageDescription>
+              As a newly established organization, DP Developers is actively looking for
+              passionate engineers who would love to expand the digital influence of
+              the DP around the campus. We understand that people come from
+              different backgrounds, so the qualities we value the most are
+              willingness to absorb new knowledge and persistence to contribute.
+            </PageDescription>
+            {roles.map(role => (
+              <Badge> {role} </Badge>
+            ))}
+            <StyledAnchor
+              href="https://airtable.com/shrtQqnGLJJkuj8Zn"
+              target="_blank"
+            >
+              <div style={{ marginTop: '2rem' }}>
+                <Chevron bgColor={BLUE} color={WHITE} />{' '}
+                <ApplyHere> APPLY HERE </ApplyHere>
+              </div>
+            </StyledAnchor>
+          </Col>
+          <Col>
+            <ImgWrapper>
+              <Img fluid={img.childImageSharp.fluid} />
+            </ImgWrapper>
+          </Col>
+        </StyledRow>
+      ) : (
+        <StyledRow>
+          <Col lg={6}>
+            <PageTitle> Applications have closed. </PageTitle>
+            <PageDescription>
+              Please apply next semester!
+            </PageDescription>
+          </Col>
+          <Col>
+            <ImgWrapper>
+              <Img fluid={img.childImageSharp.fluid} />
+            </ImgWrapper>
+          </Col>
+        </StyledRow>
+      )}
+    </>
   )
 }
 
-const Apply = () => (
-  <Container title="Apply | ">
-    <Recruitment />
-    <Wrapper>
-      <IFrameWrapper>
-        <iframe class="airtable-embed" src="https://airtable.com/embed/shrtQqnGLJJkuj8Zn?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="600" style={{background: "transparent", border: "1px solid #ccc"}}></iframe>
-      </IFrameWrapper>
-    </Wrapper>
-  </Container>
-)
+
+const Apply = () => {
+
+  const recruiting = false;
+
+  return (
+    <>
+      {recruiting ? (
+        <Container title="Apply | ">
+          <Recruitment open = {true}/>
+          <Wrapper>
+            <IFrameWrapper>
+              <iframe class="airtable-embed" src="https://airtable.com/embed/shrtQqnGLJJkuj8Zn?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="600" style={{ background: "transparent", border: "1px solid #ccc" }}></iframe>
+            </IFrameWrapper>
+          </Wrapper>
+        </Container>
+      ) : (
+        <Container title="Apply | ">
+          <Recruitment open = {false}/>
+        </Container>
+      )}
+    </>
+  )
+}
 
 export default Apply
