@@ -70,6 +70,13 @@
         "emoji": "🥳",
         "from": "Nebraska",
         "img": "../images/members/web/akshay.jpg"
+      },
+      {
+        "name": "Alexander Zheng",
+        "tags": ["Frontend"],
+        "emoji": "🥶",
+        "from": "California",
+        "img": "../images/members/web/alexander.jpeg"
       }
     ]
   },
