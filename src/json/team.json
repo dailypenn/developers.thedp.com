@@ -29,13 +29,6 @@
         "emoji": "🥶",
         "from": "NJ",
         "img": "../images/members/mobile/liz.jpeg"
-      },
-      {
-        "name": "Larry Huang",
-        "tags": ["Frontend"],
-        "emoji": "🤠",
-        "from": "Connecticut",
-        "img": "../images/members/mobile/larry.jpeg"
       }
     ]
   },
@@ -43,20 +36,6 @@
     "name": "Web",
     "description": "The developers in charge of building project pages and maintaining the websites of The Daily Pennsylvanian, 34th Street, and Under the Button.",
     "members": [
-      {
-        "name": "Calvin Hu",
-        "tags": ["Lead"],
-        "from": "Philly",
-        "emoji": "🐓",
-        "img": "../images/members/web/calvin.jpg"
-      },
-      {
-        "name": "Nassim Motya",
-        "tags": ["Frontend"],
-        "emoji": "🍑",
-        "from": "Philly",
-        "img": "../images/members/web/nassim.png"
-      },
       {
         "name": "Andy Jiang",
         "tags": ["Frontend"],
@@ -92,17 +71,10 @@
     "members": [
       {
         "name": "Isabel Liang",
-        "tags": ["Design Boss"],
+        "tags": ["Design Lead"],
         "emoji": "🐈",
         "from": "Texas",
         "img": "../images/members/design/isabel.png"
-      },
-      {
-        "name": "Ava Cruz",
-        "tags": ["Design Boss Emeritus"],
-        "emoji": "🥑",
-        "from": "Delaware",
-        "img": "../images/members/design/ava.JPG"
       },
       {
         "name": "Felicity Yick",
@@ -141,6 +113,13 @@
         "emoji": "🤩",
         "from": "Manila",
         "img": "../images/members/leadership/david.jpg"
+      },
+      {
+        "name": "Ava Cruz",
+        "tags": ["Design Lead"],
+        "emoji": "🥑",
+        "from": "Delaware",
+        "img": "../images/members/design/ava.JPG"
       }
     ]
   }
