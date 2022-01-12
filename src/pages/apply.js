@@ -46,8 +46,9 @@ const ImgWrapper = s.div`
 const roles = [
   'Frontend Engineer',
   'Mobile Engineer',
-  'Backend Engineer',
-  'UI/UX Designers'
+  'Analytics'
+  // 'Backend Engineer',
+  // 'UI/UX Designers'
 ]
 
 const StyledRow = s(Row)`
