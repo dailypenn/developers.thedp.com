@@ -138,7 +138,7 @@ const Recruitment = ({ open }) => {
 
 const Apply = () => {
 
-  const recruiting = true;
+  const recruiting = false;
 
   return (
     <>

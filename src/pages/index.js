@@ -165,7 +165,7 @@ const Index = () => {
         </StyledLink>
       </Hero>
       <LatestWork />
-      <Recruitment />
+      {/* <Recruitment /> */}
     </Container>
   )
 }
