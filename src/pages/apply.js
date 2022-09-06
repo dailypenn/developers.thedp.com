@@ -44,9 +44,9 @@ const ImgWrapper = s.div`
 `
 
 const roles = [
-  'Frontend Engineer',
+  'Web Engineer',
   'Mobile Engineer',
-  'Analytics'
+  // 'Analytics'
   // 'Backend Engineer',
   // 'UI/UX Designers'
 ]
@@ -138,7 +138,7 @@ const Recruitment = ({ open }) => {
 
 const Apply = () => {
 
-  const recruiting = false;
+  const recruiting = true;
 
   return (
     <>
@@ -147,7 +147,7 @@ const Apply = () => {
           <Recruitment open = {true}/>
           <Wrapper>
             <IFrameWrapper>
-              <iframe class="airtable-embed" src="https://airtable.com/embed/shrelqD1gLu5NOp2x?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="600" style={{ background: "transparent", border: "1px solid #ccc" }}></iframe>
+              <iframe class="airtable-embed" src="https://airtable.com/embed/shrAqO7dwhn4L2EMk?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="600" style={{ background: "transparent", border: "1px solid #ccc" }}></iframe>
             </IFrameWrapper>
           </Wrapper>
         </Container>
