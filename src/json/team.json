@@ -13,69 +13,56 @@
     ]
   },
   {
-    "name": "Mobile",
-    "description": "The developers behind DP+, the iOS and Android app where you can keep up with the latest Daily Pennsylvanian, 34th Street, and Under the Button articles!",
+    "name": "Developers",
+    "description": "The developers behind the web projects of The Daily Pennsylvanian, as well as DP+, the iOS and Android app where you can keep up with the latest Daily Pennsylvanian, 34th Street, and Under the Button articles!",
+    "members": []
+  },
+  {
+    "name": "Emeritus",
+    "description": "Our previous members, without whom our work would not be possible.",
     "members": [
       {
+        "name": "Peter Chen",
+        "tags": ["Co-Founder", "Director"],
+        "emoji": "🐯",
+        "from": "HK",
+        "img": "../images/members/leadership/peter.jpg"
+      },
+      {
+        "name": "David Fan",
+        "tags": ["Co-Founder", "Analytics Manager"],
+        "emoji": "🤩",
+        "from": "Manila",
+        "img": "../images/members/leadership/david.jpg"
+      },
+      {
+        "name": "Jasper Huang",
+        "tags": ["Analytics Manager"],
+        "emoji": "🎉",
+        "from": "CA",
+        "img": "../images/members/analytics/jasper.jpg"
+      },
+      {
         "name": "Justin Lieb",
-        "tags": ["Co-Lead", "Product Manager"],
+        "tags": ["Developer Co-Lead", "Product Manager"],
         "from": "LA",
         "emoji": "🪀",
         "img": "../images/members/mobile/lieb.jpeg"
       },
       {
         "name": "Elizabeth Powell",
-        "tags": ["Co-Lead"],
+        "tags": ["Developer Co-Lead"],
         "emoji": "🥶",
         "from": "NJ",
         "img": "../images/members/mobile/liz.jpeg"
-      }
-    ]
-  },
-  {
-    "name": "Web",
-    "description": "The developers in charge of building project pages and maintaining the websites of The Daily Pennsylvanian, 34th Street, and Under the Button.",
-    "members": [
-      {
-        "name": "Andy Jiang",
-        "tags": ["Frontend"],
-        "emoji": "🐼",
-        "from": "Florida",
-        "img": "../images/members/web/andy.png"
       },
       {
-        "name": "Akshay Sharma",
-        "tags": ["Frontend"],
-        "emoji": "🥳",
-        "from": "Nebraska",
-        "img": "../images/members/web/akshay.jpg"
+        "name": "Ava Cruz",
+        "tags": ["Design Lead"],
+        "emoji": "🥑",
+        "from": "Delaware",
+        "img": "../images/members/design/ava.JPG"
       },
-      {
-        "name": "Alexander Zheng",
-        "tags": ["Frontend"],
-        "emoji": "🥶",
-        "from": "California",
-        "img": "../images/members/web/alexander.jpeg"
-      }
-    ]
-  },
-  {
-    "name": "Analytics",
-    "description": "DP Analytics is the data science and business analytics hub of the Daily Pennsylvanian. At Analytics, we seek to leverage modern tools and technologies to enhance the digital and data analytics capabilities of the DP.",
-    "members": [
-      {
-        "name": "Jasper Huang",
-        "tags": ["Manager"],
-        "emoji": "🎉",
-        "from": "CA",
-        "img": "../images/members/analytics/jasper.jpg"
-      }
-    ]
-  },
-  {
-    "name": "Design",
-    "description": "The design department is responsible for the branding and visual language from our print product to our digital presence.",
-    "members": [
       {
         "name": "Isabel Liang",
         "tags": ["Design Lead"],
@@ -100,33 +87,6 @@
         "tags": ["Mobile Design"],
         "from": "Wisconsin",
         "img": "../images/members/design/mia.jpeg"
-      }
-    ]
-  },
-  {
-    "name": "Emeritus",
-    "description": "Our previous members, without whom our work would not be possible.",
-    "members": [
-      {
-        "name": "Peter Chen",
-        "tags": ["Co-Founder", "Director"],
-        "emoji": "🐯",
-        "from": "HK",
-        "img": "../images/members/leadership/peter.jpg"
-      },
-      {
-        "name": "David Fan",
-        "tags": ["Co-Founder", "Analytics Manager"],
-        "emoji": "🤩",
-        "from": "Manila",
-        "img": "../images/members/leadership/david.jpg"
-      },
-      {
-        "name": "Ava Cruz",
-        "tags": ["Design Lead"],
-        "emoji": "🥑",
-        "from": "Delaware",
-        "img": "../images/members/design/ava.JPG"
       }
     ]
   }
