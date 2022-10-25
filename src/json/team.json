@@ -15,7 +15,36 @@
   {
     "name": "Developers",
     "description": "The developers behind the web projects of The Daily Pennsylvanian, as well as DP+, the iOS and Android app where you can keep up with the latest Daily Pennsylvanian, 34th Street, and Under the Button articles!",
-    "members": []
+    "members": [
+      {
+        "name": "Bach Tran",
+        "tags": ["Web Developer"],
+        "emoji": "",
+        "from": "",
+        "img": "../images/members/web/bachtran.png"
+      },
+      {
+        "name": "Ethan Weisberg",
+        "tags": ["Web Developer"],
+        "emoji": "",
+        "from": "",
+        "img": "../images/members/web/ethan.jpg"
+      },
+      {
+        "name": "Annabella Tian",
+        "tags": ["Mobile Developer"],
+        "emoji": "",
+        "from": "",
+        "img": "../images/members/mobile/annabella.jpg"
+      },
+      {
+        "name": "Brian Lu",
+        "tags": ["Mobile Developer"],
+        "emoji": "",
+        "from": "",
+        "img": "../images/members/mobile/brian.png"
+      }
+    ]
   },
   {
     "name": "Emeritus",

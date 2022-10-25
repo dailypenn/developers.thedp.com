@@ -62,7 +62,9 @@ const Card = ({ name, tags, img, emoji, from }) => (
       {tags.map(tag => (
         <Badge bgColor={RED_PERCENT(0.32)}> {tag} </Badge>
       ))}
-      <CardDescription> from {from} </CardDescription>
+      {from
+        && <CardDescription> from {from} </CardDescription>
+      }
     </Col>
   </CardWrapper>
 )
