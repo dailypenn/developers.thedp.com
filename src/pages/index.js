@@ -155,8 +155,7 @@ const Index = () => {
         <HelloWorld> Hello world. </HelloWorld>
         <p style={{ fontSize: '2.5rem' }}>We're the DP Developers!</p>
         <SubHead>
-          We power everything digital by The Daily Pennsylvanian, <br /> Penn's
-          independent, student-run newspaper.
+          We power everything digital by The Daily Pennsylvanian, <br /> Penn's award-winning independently-run media company.
         </SubHead>
         <StyledLink to="/products">
           <Checkout>

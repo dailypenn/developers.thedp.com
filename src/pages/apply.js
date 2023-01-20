@@ -91,17 +91,16 @@ const Recruitment = ({ open }) => {
           <Col lg={6}>
             <PageTitle> We're Recruiting! </PageTitle>
             <PageDescription>
-              As a newly established organization, DP Developers is actively looking for
-              passionate engineers who would love to expand the digital influence of
-              the DP around the campus. We understand that people come from
-              different backgrounds, so the qualities we value the most are
-              willingness to absorb new knowledge and persistence to contribute.
+              Backed by Penn's award-winning independently-run $3.7 million media company, DP Developers is a team of passionate engineers dedicated to 
+              expanding the digital influence of The Daily Pennsylvanian. Our websites and apps serve thousands of visitors everyday 
+              and we are rapidly expanding to help scale news to all students on campus. We understand that people come from different backgrounds, so the qualities we value the most are
+              willingness to absorb new knowledge and persistence to contribute!
             </PageDescription>
             {roles.map(role => (
               <Badge> {role} </Badge>
             ))}
             <StyledAnchor
-              href="https://airtable.com/shrtQqnGLJJkuj8Zn"
+              href="https://airtable.com/shrAqO7dwhn4L2EMk"
               target="_blank"
             >
               <div style={{ marginTop: '2rem' }}>
@@ -138,7 +137,7 @@ const Recruitment = ({ open }) => {
 
 const Apply = () => {
 
-  const recruiting = false;
+  const recruiting = true;
 
   return (
     <>
@@ -153,7 +152,7 @@ const Apply = () => {
         </Container>
       ) : (
         <Container title="Apply | ">
-          <Recruitment open = {false}/>
+          <Recruitment open = {recruiting}/>
         </Container>
       )}
     </>
