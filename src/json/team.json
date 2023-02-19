@@ -36,6 +36,13 @@
         "emoji": "",
         "from": "",
         "img": "../images/members/mobile/brian.png"
+      },
+      {
+        "name": "Emily Shang",
+        "tags": ["Web Developer"],
+        "emoji": "🙌",
+        "from": "",
+        "img": ""
       }
     ]
   },
