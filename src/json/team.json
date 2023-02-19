@@ -24,6 +24,13 @@
         "img": "../images/members/web/ethan.jpg"
       },
       {
+        "name": "Rohan Moniz",
+        "tags": ["Web Developer"],
+        "emoji": "",
+        "from": "",
+        "img": "../images/members/web/rohan.jpeg"
+      },
+      {
         "name": "Annabella Tian",
         "tags": ["Mobile Developer"],
         "emoji": "",
