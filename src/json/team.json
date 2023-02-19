@@ -4,11 +4,11 @@
     "description": "The director manages the development of all DP Developer products and collaborates with other Daily Pennsylvanian teams, from editors to designers, in order to integrate them seamlessly.",
     "members": [
       {
-        "name": "Raunaq Singh",
+        "name": "Bach Tran",
         "tags": ["Director", "Mobile", "Web"],
-        "from": "Philly",
-        "emoji": "🍯",
-        "img": "../images/members/leadership/raunaq.jpeg"
+        "emoji": "💪",
+        "from": "",
+        "img": "../images/members/web/bachtran.png"
       }
     ]
   },
@@ -16,13 +16,6 @@
     "name": "Developers",
     "description": "The developers behind the web projects of The Daily Pennsylvanian, as well as DP+, the iOS and Android app where you can keep up with the latest Daily Pennsylvanian, 34th Street, and Under the Button articles!",
     "members": [
-      {
-        "name": "Bach Tran",
-        "tags": ["Web Developer"],
-        "emoji": "",
-        "from": "",
-        "img": "../images/members/web/bachtran.png"
-      },
       {
         "name": "Ethan Weisberg",
         "tags": ["Web Developer"],
@@ -50,6 +43,13 @@
     "name": "Emeritus",
     "description": "Our previous members, without whom our work would not be possible.",
     "members": [
+      {
+        "name": "Raunaq Singh",
+        "tags": ["Director", "Mobile", "Web"],
+        "from": "Philly",
+        "emoji": "🍯",
+        "img": "../images/members/leadership/raunaq.jpeg"
+      },
       {
         "name": "Peter Chen",
         "tags": ["Co-Founder", "Director"],
