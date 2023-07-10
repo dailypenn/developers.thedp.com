@@ -43,6 +43,13 @@
         "emoji": "",
         "from": "",
         "img": "../images/members/mobile/brian.png"
+      },
+      {
+        "name": "Erik Wei",
+        "tags": ["Mobile Developer"],
+        "emoji": "",
+        "from": "",
+        "img": "../images/members/mobile/erik.png"
       }
     ]
   },
