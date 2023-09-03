@@ -38,6 +38,13 @@
         "img": "../images/members/mobile/annabella.jpg"
       },
       {
+        "name": "David Zhan",
+        "tags": ["Mobile Developer"],
+        "emoji": "",
+        "from": "",
+        "img": "../images/members/mobile/thebetterdavid.jpg"
+      },
+      {
         "name": "Brian Lu",
         "tags": ["Mobile Developer"],
         "emoji": "",
