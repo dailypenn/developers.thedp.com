@@ -100,7 +100,7 @@ const Recruitment = ({ open }) => {
               <Badge> {role} </Badge>
             ))}
             <StyledAnchor
-              href="https://airtable.com/shrAqO7dwhn4L2EMk"
+              href="https://airtable.com/appnq9WPDzaNENPwP/shrN7XpgoVvYSQSLa"
               target="_blank"
             >
               <div style={{ marginTop: '2rem' }}>
