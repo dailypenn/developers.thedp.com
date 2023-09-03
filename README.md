@@ -18,6 +18,7 @@ brew install vips pkg-config glib zlib
 export LDFLAGS="-L/opt/homebrew/opt/zlib/lib"  
 export CPPFLAGS="-I/opt/homebrew/opt/zlib/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/zlib/lib/pkgconfig"
+export NODE_OPTIONS=--openssl-legacy-provide
 ```
 
 Everything should be good to go after this and run `npm install` again.
