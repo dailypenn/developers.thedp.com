@@ -53,7 +53,7 @@ const MemberImg = s(Img)`
 const Card = ({ name, tags, img, emoji, from }) => (
   <CardWrapper>
     <Col md={6}>
-      <MemberImg fluid={img.childImageSharp.fluid} />
+      <MemberImg fluid={img?.childImageSharp?.fluid} />
     </Col>
     <Col md={6}>
       <CardTitle>

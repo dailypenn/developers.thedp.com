@@ -55,21 +55,22 @@
         "name": "Angelina Zheng",
         "tags": ["Web Developer"],
         "emoji": "",
-        "from": ""
+        "from": "",
+        "img": "../images/logo.png"
       }, 
       {
         "name": "Namita Sajai",
         "tags": ["Web Developer"],
         "emoji": "",
         "from": "",
-        "img": ""
+        "img": "../images/logo.png"
       },
       {
         "name": "Emily Shang",
         "tags": ["Web Developer"],
         "emoji": "🙌",
         "from": "",
-        "img": ""
+        "img": "../images/logo.png"
       },
       {
         "name": "Owen Lester",
