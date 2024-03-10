@@ -17,18 +17,18 @@
     "description": "The developers behind the web projects of The Daily Pennsylvanian, as well as DP+, the iOS and Android app where you can keep up with the latest Daily Pennsylvanian, 34th Street, and Under the Button articles!",
     "members": [
       {
-        "name": "Ethan Weisberg",
-        "tags": ["Web Developer"],
-        "emoji": "",
-        "from": "",
-        "img": "../images/members/web/ethan.jpg"
-      },
-      {
         "name": "Rohan Moniz",
         "tags": ["Web Developer"],
         "emoji": "",
         "from": "",
         "img": "../images/members/web/rohan.jpeg"
+      },
+      {
+        "name": "Erik Wei",
+        "tags": ["Mobile Developer"],
+        "emoji": "🌱",
+        "from": "",
+        "img": "../images/members/mobile/erik.png"
       },
       {
         "name": "Annabella Tian",
@@ -38,6 +38,20 @@
         "img": "../images/members/mobile/annabella.jpg"
       },
       {
+        "name": "Brian Lu",
+        "tags": ["Mobile Developer"],
+        "emoji": "",
+        "from": "",
+        "img": "../images/members/mobile/brian.png"
+      },
+      {
+        "name": "Ethan Weisberg",
+        "tags": ["Web Developer"],
+        "emoji": "",
+        "from": "",
+        "img": "../images/members/web/ethan.jpg"
+      },
+      {
         "name": "David Zhan",
         "tags": ["Mobile Developer"],
         "emoji": "",
@@ -45,11 +59,11 @@
         "img": "../images/members/mobile/thebetterdavid.jpg"
       },
       {
-        "name": "Brian Lu",
-        "tags": ["Mobile Developer"],
+        "name": "Owen Lester",
+        "tags": ["Web Developer"],
         "emoji": "",
         "from": "",
-        "img": "../images/members/mobile/brian.png"
+        "img": "../images/members/web/owenlester.jpg"
       },
       {
         "name": "Angelina Zheng",
@@ -71,20 +85,6 @@
         "emoji": "🙌",
         "from": "",
         "img": "../images/logo.png"
-      },
-      {
-        "name": "Owen Lester",
-        "tags": ["Web Developer"],
-        "emoji": "",
-        "from": "",
-        "img": "../images/members/web/owenlester.jpg"
-      },
-      {
-        "name": "Erik Wei",
-        "tags": ["Mobile Developer"],
-        "emoji": "",
-        "from": "",
-        "img": "../images/members/mobile/erik.png"
       }
     ]
   },
