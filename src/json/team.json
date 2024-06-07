@@ -25,10 +25,17 @@
       },
       {
         "name": "Erik Wei",
-        "tags": ["Mobile Developer"],
+        "tags": ["Lead Mobile Developer"],
         "emoji": "🌱",
         "from": "",
         "img": "../images/members/mobile/erik.jpeg"
+      },
+      {
+        "name": "Michelle Chang",
+        "tags": ["Web Developer"],
+        "emoji": "",
+        "from": "",
+        "img": "../images/members/web/michelle.jpg"
       },
       {
         "name": "Annabella Tian",
@@ -52,13 +59,6 @@
         "img": "../images/members/web/ethan.jpg"
       },
       {
-        "name": "David Zhan",
-        "tags": ["Mobile Developer"],
-        "emoji": "",
-        "from": "",
-        "img": "../images/members/mobile/thebetterdavid.jpg"
-      },
-      {
         "name": "Owen Lester",
         "tags": ["Web Developer"],
         "emoji": "",
@@ -66,15 +66,15 @@
         "img": "../images/members/web/owenlester.jpg"
       },
       {
-        "name": "Angelina Zheng",
+        "name": "Kristine Yip",
         "tags": ["Web Developer"],
         "emoji": "",
         "from": "",
         "img": "../images/logo.png"
-      }, 
+      },
       {
         "name": "Namita Sajai",
-        "tags": ["Web Developer"],
+        "tags": ["UX Developer"],
         "emoji": "",
         "from": "",
         "img": "../images/logo.png"
